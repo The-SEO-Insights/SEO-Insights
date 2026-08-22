@@ -1,0 +1,32 @@
+template changes
+
+ -- Nave Bar changes:
+
+   <a href="https://theseoinsights.com" class="nav-link active">Home  <span class="dumbbell"></span></a>
+                <a href="https://theseoinsights.com/services" class="nav-link">Services</a>
+                <a href="https://theseoinsights.com/tools" class="nav-link">Tools</a>
+                <a href="https://theseoinsights.com/contact-us" class="nav-link">Contact</a>
+
+
+Pages Links:
+
+https://theseoinsights.com
+https://theseoinsights.com/services
+https://theseoinsights.com/tools
+https://theseoinsights.com/contact-us
+https://theseoinsights.com/tools/bulk-url-opener
+https://theseoinsights.com/tools/diff-checker
+https://theseoinsights.com/tools/free-online-text-editor
+https://theseoinsights.com/free-seo-audit
+https://theseoinsights.com/terms
+https://theseoinsights.com/privacy-policy
+
+---Assets links
+
+--Image
+https://theseoinsights.com/assets/images/tools/bulk-url-opener.png
+https://theseoinsights.com/assets/images/tools/diff-checker.png
+https://theseoinsights.com/assets/images/tools/free-online-text-editor.png
+https://theseoinsights.com/assets/images/service-card.png
+https://theseoinsights.com/assets/images/hero-section-image.png
+https://theseoinsights.com/assets/images/logo.png

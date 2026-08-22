@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | SEO Insights - Coming Soon</title>
+    <meta name="description" content="Learn about SEO Insights. Our full profile and search excellence services are launching soon.">
+    <meta name="robots" content="noindex, nofollow">
+    <style>
+        /* --- BRAND VARIABLES --- */
+        :root {
+            --primary: #6366f1;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --white: #ffffff;
+            --text-muted: #64748b;
+            --glass: rgba(15, 23, 42, 0.8);
+        }
+
+        /* --- BASE STYLES --- */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', system-ui, sans-serif; line-height: 1.6; color: var(--dark); background: #fff; position: relative; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; }
+        .section-padding { padding: 5rem 0; }
+        .text-center { text-align: center; }
+        .text-primary { color: var(--primary); }
+        .bg-light { background-color: var(--light); }
+        .bg-dark { background-color: var(--dark); }
+        .text-white { color: var(--white); }
+
+        /* --- THE "COMING SOON" OVERLAY --- */
+        /* This keeps the content behind it visible but "locked" */
+        .coming-soon-overlay {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: var(--glass);
+            backdrop-filter: blur(8px);
+            z-index: 10000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        .overlay-card {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 3rem;
+            border-radius: 24px;
+            max-width: 500px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+        .overlay-card h2 { font-size: 2.5rem; margin-bottom: 1rem; }
+        .overlay-card p { margin-bottom: 2rem; opacity: 0.9; }
+        .btn-notify { 
+            background: var(--primary); color: white; padding: 1rem 2rem; 
+            border-radius: 12px; text-decoration: none; font-weight: 700;
+            display: inline-block; transition: 0.3s;
+        }
+        .btn-notify:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(99, 102, 241, 0.4); }
+
+        /* --- ABOUT PAGE CONTENT (BLURRED) --- */
+        main { filter: blur(2px); pointer-events: none; user-select: none; }
+
+        /* --- PAGE ELEMENTS (FROM YOUR ABOUT PAGE) --- */
+        .navbar { padding: 1.5rem 0; border-bottom: 1px solid #e2e8f0; }
+        .nav-flex { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: 800; color: var(--dark); text-decoration: none; }
+        .logo span { color: var(--primary); }
+        
+        .hero-inner { padding: 6rem 0; }
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
+        @media (max-width: 768px) { .grid-2 { grid-template-columns: 1fr; } }
+        
+        h1 { font-size: 3.5rem; line-height: 1.1; margin-bottom: 1rem; }
+        .card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+        @media (max-width: 768px) { .card-grid { grid-template-columns: 1fr; } }
+        
+        .skill-card { padding: 2rem; border: 1px solid #e2e8f0; border-radius: 16px; }
+        .timeline { border-left: 2px solid var(--primary); padding-left: 2rem; }
+        .timeline-item { margin-bottom: 2rem; }
+    </style>
+</head>
+<body>
+
+    <div class="coming-soon-overlay">
+        <div class="overlay-card">
+            <div style="font-size: 3rem; margin-bottom: 1rem;">🚀</div>
+            <h2>Coming Soon</h2>
+            <p>Our "About Us" story is being updated for 2026. Join our list to be the first to see our new search strategy roadmap.</p>
+            <a href="mailto:support@theseoinsights.com" class="btn-notify">Notify Me on Launch</a>
+        </div>
+    </div>
+
+    <header class="navbar">
+        <div class="container nav-flex">
+            <a href="#" class="logo">SEO<span> Insights</span></a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-inner">
+            <div class="container grid-2">
+                <div class="hero-content">
+                    <h1>Scaling Brands Through <span class="text-primary">Search Excellence.</span></h1>
+                    <p>I help ambitious businesses navigate the complex world of SEO to reach their true potential.</p>
+                </div>
+                <div style="background: #eee; height: 300px; border-radius: 20px;"></div>
+            </div>
+        </section>
+
+        <section class="section-padding bg-light">
+            <div class="container grid-2">
+                <div>
+                    <h2>Our Mission</h2>
+                    <p>To democratize high-end SEO strategies for freelancers and small businesses.</p>
+                </div>
+                <div>
+                    <h2>Our Vision</h2>
+                    <p>To become the leading resource for ethical, "white-hat" SEO education.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding">
+            <div class="container">
+                <h2 class="text-center" style="margin-bottom: 3rem;">Core Expertise</h2>
+                <div class="card-grid">
+                    <article class="skill-card"><h3>Technical SEO</h3><p>Optimizing site architecture and Core Web Vitals.</p></article>
+                    <article class="skill-card"><h3>Content Strategy</h3><p>Developing keyword clusters that satisfy users.</p></article>
+                    <article class="skill-card"><h3>Authority Building</h3><p>Strategic backlink acquisition and digital PR.</p></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding bg-dark text-white">
+            <div class="container">
+                <h2 class="text-center" style="margin-bottom: 3rem;">The Journey</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <p class="text-primary" style="font-weight: bold;">2018 - 2020</p>
+                        <h3>Agency Roots</h3>
+                    </div>
+                    <div class="timeline-item">
+                        <p class="text-primary" style="font-weight: bold;">2021 - Present</p>
+                        <h3>Independent Strategy</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="section-padding text-center" style="border-top: 1px solid #eee;">
+        <p>&copy; 2026 SEO Insights. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

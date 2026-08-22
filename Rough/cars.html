@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    :root {
+    --primary: #2563eb;
+    --dark: #0f172a;
+    --light: #f8fafc;
+    --gray: #64748b;
+    --white: #ffffff;
+    --transition: all 0.3s ease;
+    --lighhtgray: #f5deb3;
+}
+
+/* Base Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', system-ui, sans-serif; line-height: 1.6; color: var(--dark); overflow-x: hidden; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+.container1 { max-width: 1200px; margin: 0 auto; padding: 0 0 0 1.5rem; }
+a { text-decoration: none; color: inherit; transition: var(--transition); }
+ul { list-style: none; }
+    /* =========================
+   SEO TOOLS SECTION
+========================= */
+
+.seo-tools {
+    padding: 4rem 0;
+    background: var(--white);
+}
+
+.section-heading {
+    max-width: 700px;
+    margin-bottom: 2.5rem;
+}
+
+.section-heading h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: .75rem;
+    color: var(--dark);
+}
+
+.section-heading p {
+    color: var(--gray);
+    font-size: 1rem;
+}
+
+/* =========================
+   GRID
+========================= */
+
+.tools-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.tool-card {
+    background: var(--white);
+    border-radius: 20px;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+
+    border: 1px solid rgba(0,0,0,.06);
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.05);
+
+    transition: var(--transition);
+}
+
+.tool-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 20px 40px rgba(0,0,0,.12);
+}
+
+.tool-image {
+    aspect-ratio: 16/10;
+    overflow: hidden;
+}
+
+.tool-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+    transition: var(--transition);
+}
+
+.tool-card:hover .tool-image img {
+    transform: scale(1.05);
+}
+
+.tool-content {
+    padding: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+}
+
+.tool-content h3 {
+    font-size: 1.35rem;
+    margin-bottom: .75rem;
+    color: var(--dark);
+}
+
+.tool-content p {
+    color: var(--gray);
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.tool-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+
+    width: fit-content;
+
+    padding: .75rem 1.2rem;
+
+    background: var(--primary);
+    color: var(--white);
+
+    border-radius: 999px;
+
+    font-weight: 600;
+}
+
+.tool-btn:hover {
+    transform: translateX(2px);
+}
+
+.tool-btn span {
+    transition: var(--transition);
+}
+
+.tool-btn:hover span {
+    transform: translateX(4px);
+}
+
+/* =========================
+   FOOTER BUTTON
+========================= */
+
+.tools-footer {
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+.explore-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: .6rem;
+
+    padding: .9rem 1.5rem;
+
+    background: var(--primary);
+    color: var(--white);
+
+    border-radius: 999px;
+
+    font-weight: 700;
+
+    box-shadow:
+        0 10px 25px rgba(37,99,235,.25);
+}
+
+.explore-btn span {
+    transition: var(--transition);
+}
+
+.explore-btn:hover span {
+    transform: translateX(4px);
+}
+
+@media (max-width: 768px) {
+    .section-heading h2 { font-size: 1.5rem; }
+        .tool-content p { font-size: 0.8rem;}
+    .tool-content h3 { font-size: 1rem;}
+    .seo-tools {padding: 3rem 0;}
+}
+
+@media (max-width: 390px) {
+ .seo-tools {padding: 2rem 0;}
+        .container {padding: 0 0.8rem; }
+        .tool-content {padding: 0.5rem}
+.tool-btn {padding: .5rem .8rem; font-weight: 400;}
+.explore-btn {padding: .8rem 1rem; font-weight: 400;}
+}
+
+@media (min-width: 768px) {
+.tools-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-heading h2 {
+        font-size: 2.4rem;
+    }
+}
+@media (min-width: 1024px) {
+
+ .tools-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .section-heading h2 {
+        font-size: 2.8rem;
+    }
+   }
+   </style>
+</head>
+<body>
+    <section class="seo-tools">
+    <div class="container">
+
+        <div class="section-heading">
+            <h2>Free SEO Tools</h2>
+            <p>
+                Try our free SEO and productivity tools to improve analysis,
+                content optimization, and workflow efficiency.
+            </p>
+        </div>
+
+        <div class="tools-grid">
+
+            <!-- Tool Card 1 -->
+            <article class="tool-card">
+                <div class="tool-image">
+                    <img src="C:\Users\USER\Documents\SEO-Insights-main\SEO-Insights-main\assets\images\home_page\ChatGPT Image Jun 18, 2026, 09_45_45 PM.png"
+                        alt="Bulk URL Opener Tool"
+                        loading="lazy"
+                        width="400"
+                        height="250">
+                </div>
+
+                <div class="tool-content">
+                    <h3>Bulk URL Opener</h3>
+
+                    <p>
+                        Open multiple URLs at once. Perfect for SEO audits,
+                        competitor research, and workflow automation.
+                    </p>
+
+                    <a href="#" class="tool-btn">
+                        Open Tool
+                        <span>→</span>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Tool Card 2 -->
+            <article class="tool-card">
+                <div class="tool-image">
+                    <img src="C:\Users\USER\Documents\SEO-Insights-main\SEO-Insights-main\assets\images\home_page\ChatGPT Image Jun 18, 2026, 10_13_51 PM.png"
+                        alt="Free Online Text Editor"
+                        loading="lazy"
+                        width="400"
+                        height="250"
+                        style="object-fit: cover; object-position: center;">
+                </div>
+
+                <div class="tool-content">
+                    <h3>Free Online Text Editor</h3>
+
+                    <p>
+                        Write, edit, format, clean and optimize content with
+                        built-in SEO and text-processing features.
+                    </p>
+
+                    <a href="#" class="tool-btn">
+                        Open Tool
+                        <span>→</span>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Tool Card 3 -->
+            <article class="tool-card">
+                <div class="tool-image">
+                    <img src="C:\Users\USER\Documents\SEO-Insights-main\SEO-Insights-main\assets\images\home_page\diff_checker.png"
+                        alt="Diff Checker Tool"
+                        loading="lazy"
+                        width="400"
+                        height="250">
+                </div>
+
+                <div class="tool-content">
+                    <h3>Diff Checker</h3>
+
+                    <p>
+                        Compare two blocks of text instantly and identify
+                        differences for SEO, content, and development work.
+                    </p>
+
+                    <a href="#" class="tool-btn">
+                        Open Tool
+                        <span>→</span>
+                    </a>
+                </div>
+            </article>
+
+        </div>
+
+        <div class="tools-footer">
+            <a href="#" class="explore-btn">
+                Explore More Tools
+                <span>→</span>
+            </a>
+        </div>
+
+    </div>
+</section>
+</body>
+</html>

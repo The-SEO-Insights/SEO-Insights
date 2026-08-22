@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free SEO Audit | Get a No-Cost Website Scan | SEO Insights</title>
+    <meta name="description" content="Request a free SEO audit and see exactly what's holding your rankings back. No cost, no obligation — submit your URL and get a clear report from SEO Insights.">
+    <link rel="canonical" href="https://www.theseoinsights.com/free-seo-audit">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Free SEO Audit | SEO Insights">
+    <meta property="og:description" content="Submit your website for a free, no-obligation SEO audit and find out what's covered before you send it.">
+    <meta property="og:url" content="https://www.theseoinsights.com/free-seo-audit">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Schema.org: Service markup for the free audit offer -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Free SEO Audit",
+      "name": "Free SEO Audit",
+      "description": "A complimentary, no-obligation SEO audit covering technical health, on-page optimization, and content signals for a submitted website.",
+      "provider": {
+        "@type": "Organization",
+        "name": "SEO Insights",
+        "email": "support@theseoinsights.com",
+        "url": "https://www.theseoinsights.com"
+      },
+      "areaServed": "Worldwide",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+
+<style>
+    :root {
+    --primary: #2563eb;
+    --dark: #0f172a;
+    --light: #f8fafc;
+    --gray: #64748b;
+    --white: #ffffff;
+    --transition: all 0.3s ease;
+    --lighhtgray: #f5deb3;
+}
+
+/* Base Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', system-ui, sans-serif; line-height: 1.6; color: var(--dark); overflow-x: hidden; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+
+a { text-decoration: none; color: inherit; transition: var(--transition); }
+ul { list-style: none; }
+
+/* Navbar Component */
+.navbar {
+    position: sticky; top: 0; background: var(--white);
+    padding: 1rem 0 0.5rem 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    
+}
+.nav-flex { display: flex; justify-content: space-between; align-items: center; padding-bottom:8px !important; border-bottom: 8px solid var(--lighhtgray); border-radius: 10px; font-family: "Cardo", serif; font-weight: 700; font-style: normal;}
+
+.nav-links { display: flex; gap: 2rem; }
+.nav-link { position: relative; text-decoration: none;  font-weight: 700; font-size: 0.95rem; }
+
+
+.dumbbell {
+  display: block;
+  height: 3px;
+  background: black;
+  width: 100%;
+  position: relative;
+}
+
+.dumbbell::before,
+.dumbbell::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  width: 8px;
+  height: 8px;
+  background: black;
+  border-radius: 50%;
+}
+
+.dumbbell::before { left: 0; }
+.dumbbell::after { right: 0; }
+
+/* Mobile Menu Button */
+.menu-toggle { display: none; background: none; border: none; cursor: pointer; }
+.hamburger { width: 25px; height: 2px; background: var(--dark); display: block; position: relative; }
+.hamburger::before, .hamburger::after { content: ''; width: 100%; height: 2px; background: var(--dark); position: absolute; left: 0; }
+.hamburger::before { top: -8px; } .hamburger::after { bottom: -8px; }
+
+/* ===================
+   FOOTER
+=================== */
+
+.site-footer{
+    background:linear-gradient(
+    135deg,
+    #60a5fa,
+    #3b82f6);
+    color:white;
+}
+
+.footer-grid{
+    display:grid;
+    gap:2rem;
+    padding:3rem 0;
+}
+
+.footer-logo{
+    width:250px;
+    margin-bottom:1rem;
+}
+
+.footer-links h3,
+.footer-contact h3{
+    margin-bottom:1rem;
+    color:#d9ff5a;
+}
+
+.footer-links ul{
+    list-style:none;
+}
+
+.footer-links li{
+    margin-bottom:.75rem;
+}
+
+.footer-links a{
+    color:white;
+}
+
+.footer-contact a{
+    color:white;
+    display:block;
+    margin-bottom:1rem;
+}
+
+.socials{
+    display:flex;
+    gap:1rem;
+}
+
+.socials a{
+    color:white;
+    font-size:2rem;
+}
+
+.copyright{
+    text-align:center;
+    padding:1rem;
+    border-top:1px solid rgba(255,255,255,.2);
+}
+
+
+@media (max-width: 768px) {
+    .menu-toggle { display: block; }
+    .nav-links {
+        position: fixed; top: 70px; left: -100%; width: 100%; height: calc(100vh - 70px);
+        background: var(--white); flex-direction: column; align-items: center;
+        padding-top: 2rem; transition: 0.4s;
+    }
+    .nav-links.active { left: 0; }
+    
+    .nav-flex img{width: 200px;}
+
+}
+@media (max-width: 390px) {
+    .nav-flex{gap: 20px}
+    .nav-flex img{width: 130px;}
+    .navbar{padding-top: 0.5rem;}
+      
+}
+@media (min-width: 768px) {
+
+  
+    .footer-grid{
+        grid-template-columns:
+        1.2fr
+        1fr
+        1fr;
+    }
+
+
+
+}
+
+/* ======================================================
+   FREE SEO AUDIT PAGE — new content styles (prefixed "audit-")
+   Nothing above this line has been altered.
+====================================================== */
+
+.audit-page {
+    --audit-green: #15803d;
+    --audit-green-bg: #ecfdf3;
+    --audit-red: #b91c1c;
+    --audit-red-bg: #fef2f2;
+    --audit-lime: #d9ff5a;
+    --audit-line: #e2e8f0;
+}
+
+.audit-page h1,
+.audit-page h2,
+.audit-page h3 {
+    font-family: 'Cardo', serif;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--dark);
+}
+
+.audit-page section {
+    padding: 3rem 0;
+}
+
+.audit-page .eyebrow {
+    display: inline-block;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--primary);
+    background: #eff6ff;
+    padding: 0.35rem 0.8rem;
+    border-radius: 999px;
+    margin-bottom: 1rem;
+}
+
+/* Hero */
+.audit-hero {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 8px solid var(--lighhtgray);
+}
+
+.audit-hero .container {
+    max-width: 760px;
+    text-align: center;
+}
+
+.audit-hero h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.audit-hero p.lead {
+    color: var(--gray);
+    font-size: 1.05rem;
+    margin-bottom: 1.75rem;
+}
+
+.audit-cta-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.btn-primary {
+    display: inline-block;
+    background: var(--primary);
+    color: var(--white);
+    font-weight: 700;
+    padding: 0.9rem 1.75rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+.btn-primary:hover,
+.btn-primary:focus-visible { background: #1d4ed8; }
+
+.audit-trust-line {
+    color: var(--gray);
+    font-size: 0.85rem;
+}
+
+/* Covered / not covered */
+.audit-scope-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+}
+
+.audit-scope-card {
+    border: 1px solid var(--audit-line);
+    border-radius: 12px;
+    padding: 1.75rem;
+}
+
+.audit-scope-card h3 {
+    font-size: 1.15rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.audit-scope-card.is-covered h3 { color: var(--audit-green); }
+.audit-scope-card.is-excluded h3 { color: var(--audit-red); }
+
+.audit-scope-card ul { display: flex; flex-direction: column; gap: 0.75rem; }
+
+.audit-scope-card li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.65rem;
+    font-size: 0.95rem;
+}
+
+.audit-scope-card.is-covered li i {
+    color: var(--audit-green);
+    background: var(--audit-green-bg);
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 0.7rem;
+    margin-top: 0.15rem;
+}
+
+.audit-scope-card.is-excluded li i {
+    color: var(--audit-red);
+    background: var(--audit-red-bg);
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 0.7rem;
+    margin-top: 0.15rem;
+}
+
+/* How it works */
+.audit-steps {
+    background: var(--light);
+}
+
+.audit-steps-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+    margin-top: 1.5rem;
+}
+
+.audit-step {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1px solid var(--audit-line);
+}
+
+.audit-step .step-num {
+    font-family: 'Cardo', serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--primary);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.audit-step h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+.audit-step p { color: var(--gray); font-size: 0.92rem; }
+
+/* Form section */
+.audit-form-section h2 { margin-bottom: 0.5rem; }
+.audit-form-section > .container > p.lead {
+    color: var(--gray);
+    margin-bottom: 2rem;
+    max-width: 640px;
+}
+
+
+.audit-form-wrapper {
+    position: relative;
+    border: 1px solid var(--audit-line);
+    border-radius: 12px;
+    overflow: hidden;
+    background: var(--white);
+}
+
+.audit-form-wrapper iframe {
+    width: 100%;
+    min-height: 900px;
+    border: 0;
+    display: block;
+    transition: filter 0.25s ease;
+}
+
+
+
+.audit-form-fallback {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.audit-form-fallback a {
+    color: var(--primary);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+
+
+/* Focus visibility for keyboard nav */
+.audit-page a:focus-visible,
+.audit-page button:focus-visible,
+.audit-page input:focus-visible {
+    outline: 3px solid var(--primary);
+    outline-offset: 2px;
+}
+
+@media (min-width: 640px) {
+    .audit-hero h1 { font-size: 2.5rem; }
+    .audit-cta-row { flex-direction: row; justify-content: center; }
+}
+
+@media (min-width: 768px) {
+    .audit-scope-grid { grid-template-columns: 1fr 1fr; }
+    .audit-steps-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width: 992px) {
+    .audit-hero h1 { font-size: 3rem; }
+}
+
+</style>
+</head>
+<body class="audit-page">
+    <header class="navbar" id="main-nav">
+        <div class="container nav-flex">
+           <img src="C:\Users\USER\Documents\SEO-Insights-main\SEO-Insights-main\assets\images\navlogo.png" width="230" alt="SEO_insights_Logo">
+            
+            <button class="menu-toggle" aria-label="Toggle Menu">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav class="nav-links">
+                <a href="#hero" class="nav-link active">Home  <span class="dumbbell"></span></a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#tools" class="nav-link">Tools</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+        </div >
+    </header>
+
+    <main id="main-content">
+
+        <!-- HERO -->
+        <section class="audit-hero" id="audit-hero" aria-labelledby="audit-hero-heading">
+            <div class="container">
+                <span class="eyebrow">100% Free · No Obligation</span>
+                <h1 id="audit-hero-heading">Get a Free SEO Audit for Your Website</h1>
+                <p class="lead">
+                    Submit your site and we'll show you exactly what's helping and hurting your rankings —
+                    technical health, on-page basics, and content signals, reviewed by a human, not just a scanner.
+                </p>
+                <div class="audit-cta-row">
+                    <a href="#audit-form" class="btn-primary">Request Your Free Audit</a>
+                </div>
+                <p class="audit-trust-line" style="margin-top:1rem;">
+                    Takes under 2 minutes to submit &middot; Report delivered by email
+                </p>
+            </div>
+        </section>
+<!-- FORM -->
+        <section class="audit-form-section" id="audit-form" aria-labelledby="form-heading">
+            <div class="container">
+                <span class="eyebrow">Get Started</span>
+                <h2 id="form-heading">Request Your Free SEO Audit</h2>
+
+               
+
+                <div class="audit-form-wrapper" id="form-wrapper">
+                   
+                    <iframe
+                        id="audit-google-form"
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSehxPsrFxObkGtcRlLYRa6cmRmzj0G3GkJLt4ypFgB4KrtFvg/viewform?embedded=true"
+                        title="Free SEO audit request form"
+                        loading="lazy"
+                        tabindex="-1"
+                        aria-hidden="true">
+                        Loading…
+                    </iframe>
+                </div>
+
+                <p class="audit-form-fallback">
+                    Having trouble with the embedded form?
+                    <a id="fallback-link" href="https://docs.google.com/forms/d/e/1FAIpQLSehxPsrFxObkGtcRlLYRa6cmRmzj0G3GkJLt4ypFgB4KrtFvg/viewform" target="_blank" rel="noopener" aria-disabled="true">
+                        Open the form in a new tab
+                    </a>
+                </p>
+            </div>
+        </section>
+        
+        <!-- WHAT'S COVERED / NOT COVERED -->
+        <section id="scope" aria-labelledby="scope-heading">
+            <div class="container">
+                <span class="eyebrow">Scope</span>
+                <h2 id="scope-heading">What's Included in Your Free Audit</h2>
+                <p style="color:var(--gray); max-width:640px; margin-bottom:2rem;">
+                    We keep the free audit focused so we can turn it around quickly. Here's exactly what you'll get,
+                    and what's reserved for our
+                    <a href="#services" style="color:var(--primary); font-weight:600; text-decoration:underline;">paid SEO services</a>.
+                </p>
+
+                <div class="audit-scope-grid">
+                    <div class="audit-scope-card is-covered">
+                        <h3><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Covered in the Free Audit</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Core technical health check (indexing, crawlability, site speed basics)</span></li>
+                            <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>On-page review of titles, meta descriptions, and heading structure</span></li>
+                            <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Mobile-friendliness and Core Web Vitals snapshot</span></li>
+                            <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Top 3 quick-win recommendations you can act on immediately</span></li>
+                            <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>A short summary report sent to your email</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="audit-scope-card is-excluded">
+                        <h3><i class="fa-solid fa-circle-xmark" aria-hidden="true"></i> Not Included in the Free Audit</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-xmark" aria-hidden="true"></i><span>Full keyword research or a competitor gap analysis</span></li>
+                            <li><i class="fa-solid fa-xmark" aria-hidden="true"></i><span>Backlink profile audit or link-building recommendations</span></li>
+                            <li><i class="fa-solid fa-xmark" aria-hidden="true"></i><span>Page-by-page content rewrite suggestions</span></li>
+                            <li><i class="fa-solid fa-xmark" aria-hidden="true"></i><span>Ongoing rank tracking or monthly reporting</span></li>
+                            <li><i class="fa-solid fa-xmark" aria-hidden="true"></i><span>Hands-on implementation of fixes</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HOW IT WORKS -->
+        <section class="audit-steps" aria-labelledby="steps-heading">
+            <div class="container">
+                <span class="eyebrow">Process</span>
+                <h2 id="steps-heading">How the Free Audit Works</h2>
+                <div class="audit-steps-grid">
+                    <div class="audit-step">
+                        <span class="step-num">01</span>
+                        <h3>Submit your URL</h3>
+                        <p>Fill in the short form below with your website and a few basic details.</p>
+                    </div>
+                    <div class="audit-step">
+                        <span class="step-num">02</span>
+                        <h3>We review your site</h3>
+                        <p>Our team checks the technical, on-page, and mobile signals covered above.</p>
+                    </div>
+                    <div class="audit-step">
+                        <span class="step-num">03</span>
+                        <h3>Get your report</h3>
+                        <p>You'll receive a plain-language summary by email, usually within a few business days.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+    </main>
+
+    <footer class="site-footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-about">
+
+                <img
+                    src="C:\Users\USER\Documents\SEO-Insights-main\SEO-Insights-main\assets\images\navlogo.png"
+                    alt="SEO Insights"
+                    class="footer-logo">
+
+                <p>
+                    Data-driven SEO strategies and digital marketing
+                    solutions designed for modern brands and solo creators.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+                <li><a href="#">Bulk URL Opener <i class="fa-solid fa-square-arrow-up-right"></i></a></li>
+                <li><a href="#">Diff Checker <i class="fa-solid fa-square-arrow-up-right"></i></a></li>
+                <li><a href="#">Online Text Editor <i class="fa-solid fa-square-arrow-up-right"></i></a></li>
+                <li><a href="#">Our Services <i class="fa-solid fa-square-arrow-up-right"></i></a></li>
+                <li><a href="#">Our Tools <i class="fa-solid fa-square-arrow-up-right"></i></a></li>
+                </ul>
+
+            </div>
+
+            <div class="footer-contact">
+
+                <h3>Contact</h3>
+
+                <a href="mailto:support@theseoinsights.com">
+                    support@theseoinsights.com
+                </a>
+
+                <div class="socials">
+
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            SEO Insights © 2026. All rights reserved.
+        </div>
+
+    </div>
+
+</footer>
+<script>
+    // Mobile Menu Toggle
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
+// Scroll Highlighting Logic (Intersection Observer)
+// This is better for performance than 'window.onscroll'
+const sections = document.querySelectorAll('section');
+const navItems = document.querySelectorAll('.nav-link');
+
+const observerOptions = {
+    threshold: 0.5
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            navItems.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === entry.target.id) {
+                    link.classList.add('active');
+                }
+            });
+        }
+    });
+}, observerOptions);
+
+sections.forEach(section => observer.observe(section));
+
+// Smooth Scroll for Navigation
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        navLinks.classList.remove('active'); // Close mobile menu on click
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+
+</script>
+</body>
+</html>

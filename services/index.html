@@ -1,0 +1,1254 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free SEO Audit | Website Health &amp; Search Performance Check | SEO Insights</title>
+    <meta name="description" content="Request a free SEO audit and get a clear, practical breakdown of your site's technical health, on-page SEO, keyword opportunities, and content quality — no cost, no obligation.">
+    <link rel="canonical" href="https://www.theseoinsights.com/free-seo-audit">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+    :root {
+    --primary: #2563eb;
+    --dark: #0f172a;
+    --light: #f8fafc;
+    --gray: #64748b;
+    --white: #ffffff;
+    --transition: all 0.3s ease;
+    --lighhtgray: #f5deb3;
+}
+
+/* Base Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', system-ui, sans-serif; line-height: 1.6; color: var(--dark); overflow-x: hidden; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+
+a { text-decoration: none; color: inherit; transition: var(--transition); }
+ul { list-style: none; }
+
+/* Navbar Component */
+.navbar {
+    position: sticky; top: 0; background: var(--white);
+    padding: 1rem 0 0.5rem 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    
+}
+.nav-flex { display: flex; justify-content: space-between; align-items: center; padding-bottom:8px !important; border-bottom: 8px solid var(--lighhtgray); border-radius: 10px; font-family: "Cardo", serif; font-weight: 700; font-style: normal;}
+
+.nav-links { display: flex; gap: 2rem; }
+.nav-link { position: relative; text-decoration: none;  font-weight: 700; font-size: 0.95rem; }
+
+
+.dumbbell {
+  display: block;
+  height: 3px;
+  background: black;
+  width: 100%;
+  position: relative;
+}
+
+.dumbbell::before,
+.dumbbell::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  width: 8px;
+  height: 8px;
+  background: black;
+  border-radius: 50%;
+}
+
+.dumbbell::before { left: 0; }
+.dumbbell::after { right: 0; }
+
+/* Mobile Menu Button */
+.menu-toggle { display: none; background: none; border: none; cursor: pointer; }
+.hamburger { width: 25px; height: 2px; background: var(--dark); display: block; position: relative; }
+.hamburger::before, .hamburger::after { content: ''; width: 100%; height: 2px; background: var(--dark); position: absolute; left: 0; }
+.hamburger::before { top: -8px; } .hamburger::after { bottom: -8px; }
+
+/* ===================
+   FOOTER
+=================== */
+
+.site-footer{
+    background:linear-gradient(
+    135deg,
+    #60a5fa,
+    #3b82f6);
+    color:white;
+}
+
+.footer-grid{
+    display:grid;
+    gap:2rem;
+    padding:3rem 0;
+}
+
+.footer-logo{
+    width:250px;
+    margin-bottom:1rem;
+}
+
+.footer-links h3,
+.footer-contact h3{
+    margin-bottom:1rem;
+    color:#d9ff5a;
+}
+
+.footer-links ul{
+    list-style:none;
+}
+
+.footer-links li{
+    margin-bottom:.75rem;
+}
+
+.footer-links a{
+    color:white;
+}
+
+.footer-contact a{
+    color:white;
+    display:block;
+    margin-bottom:1rem;
+}
+
+.socials{
+    display:flex;
+    gap:1rem;
+}
+
+.socials a{
+    color:white;
+    font-size:2rem;
+}
+
+.copyright{
+    text-align:center;
+    padding:1rem;
+    border-top:1px solid rgba(255,255,255,.2);
+}
+
+    #audit-page {
+        --accent: #d9ff5a;
+        --wheat: #f5deb3;
+        --ink: #0f172a;
+        --ink-soft: #475569;
+        --paper: #f8fafc;
+        --line: #e2e8f0;
+        font-family: 'Inter', system-ui, sans-serif;
+        color: var(--ink);
+        overflow-x: hidden;
+    }
+
+    #audit-page h1,
+    #audit-page h2,
+    #audit-page h3,
+    #audit-page .display {
+        font-family: 'Cardo', serif;
+        font-weight: 700;
+        line-height: 1.15;
+        letter-spacing: -0.01em;
+    }
+
+    #audit-page .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: .5rem;
+        font-family: 'Inter', system-ui, sans-serif;
+        font-size: .78rem;
+        font-weight: 700;
+        letter-spacing: .12em;
+        text-transform: uppercase;
+        color: var(--primary);
+    }
+    #audit-page .eyebrow::before {
+        content: "";
+        width: 22px;
+        height: 3px;
+        background: var(--accent);
+        border-radius: 2px;
+        box-shadow: 0 0 0 1px var(--primary) inset;
+    }
+
+    #audit-page section {
+        padding: 3.5rem 0;
+    }
+    #audit-page .section-head {
+        max-width: 640px;
+        margin: 0 0 2.75rem;
+    }
+    #audit-page .section-head h2 {
+        font-size: clamp(1.6rem, 4vw, 2.35rem);
+        margin: .6rem 0 .85rem;
+    }
+    #audit-page .section-head p {
+        color: var(--ink-soft);
+        font-size: 1.02rem;
+    }
+
+    /* Buttons */
+    #audit-page .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: .6rem;
+        font-weight: 700;
+        font-size: .98rem;
+        padding: .95rem 1.75rem;
+        border-radius: 8px;
+        border: 2px solid transparent;
+        cursor: pointer;
+        transition: var(--transition);
+    }
+    #audit-page .btn-primary {
+        background: var(--dark);
+        color: var(--white);
+    }
+    #audit-page .btn-primary:hover {
+        background: var(--primary);
+        transform: translateY(-2px);
+        box-shadow: 0 10px 24px -8px rgba(37,99,235,.55);
+    }
+    #audit-page .btn-primary i { color: var(--accent); }
+    #audit-page .btn-ghost {
+        background: transparent;
+        border-color: var(--dark);
+        color: var(--dark);
+    }
+    #audit-page .btn-ghost:hover { background: var(--dark); color: var(--white); }
+
+    /* ---------- HERO ---------- */
+    #audit-page .hero {
+        padding-top: 3.5rem;
+        background:
+            radial-gradient(circle at 88% 8%, rgba(37,99,235,.08), transparent 45%),
+            var(--white);
+    }
+    #audit-page .hero-grid {
+        display: grid;
+        gap: 3rem;
+        align-items: center;
+    }
+    #audit-page .hero h1 {
+        font-size: clamp(1.8rem, 5.4vw, 3.4rem);
+        margin: .9rem 0 1.1rem;
+    }
+    #audit-page .hero h1 em {
+        font-style: italic;
+        color: var(--primary);
+    }
+    #audit-page .hero p.lede {
+        font-size: 1.08rem;
+        color: var(--ink-soft);
+        max-width: 54ch;
+        margin-bottom: 1rem;
+    }
+    #audit-page .hero p.lede + p {
+        color: var(--ink-soft);
+        max-width: 54ch;
+        margin-bottom: 2rem;
+    }
+    #audit-page .hero-actions { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; }
+    #audit-page .hero-note { display:flex; align-items:center; gap:.5rem; font-size:.85rem; color: var(--ink-soft); }
+    #audit-page .hero-note i { color: var(--primary); }
+
+    /* Signature: scanner card */
+    #audit-page .scanner {
+        position: relative;
+        background: var(--dark);
+        border-radius: 16px;
+        padding: 1.1rem 1.1rem 1.4rem;
+        box-shadow: 0 30px 60px -25px rgba(15,23,42,.45);
+        overflow: hidden;
+    }
+    #audit-page .scanner-chrome {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        padding-bottom: .9rem;
+    }
+    #audit-page .scanner-dot { width: 9px; height: 9px; border-radius: 50%; background: rgba(255,255,255,.25); }
+    #audit-page .scanner-url {
+        margin-left: .5rem;
+        flex: 1;
+        background: rgba(255,255,255,.06);
+        border: 1px solid rgba(255,255,255,.1);
+        color: rgba(255,255,255,.65);
+        font-size: .78rem;
+        padding: .4rem .7rem;
+        border-radius: 6px;
+        font-family: 'Cardo', serif;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    #audit-page .scanner-body {
+        position: relative;
+        background: #0b1220;
+        border-radius: 10px;
+        padding: 1.1rem 1.1rem 1.3rem;
+        border: 1px solid rgba(255,255,255,.06);
+    }
+    #audit-page .scan-line {
+        position: absolute;
+        left: 0; right: 0;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, var(--accent), transparent);
+        box-shadow: 0 0 18px 2px rgba(217,255,90,.55);
+        animation: sweep 3.6s ease-in-out infinite;
+    }
+    @keyframes sweep {
+        0%   { top: 6%;  opacity: 0; }
+        8%   { opacity: 1; }
+        50%  { top: 92%; opacity: 1; }
+        58%  { opacity: 0; }
+        100% { top: 92%; opacity: 0; }
+    }
+    #audit-page .scan-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: .68rem 0;
+        border-bottom: 1px dashed rgba(255,255,255,.09);
+        font-size: .88rem;
+        color: rgba(255,255,255,.75);
+    }
+    #audit-page .scan-row:last-child { border-bottom: none; }
+    #audit-page .scan-row .status {
+        width: 20px; height: 20px;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: .65rem;
+        background: rgba(255,255,255,.08);
+        color: rgba(255,255,255,.35);
+        flex: none;
+    }
+    #audit-page .scan-row.done .status {
+        background: var(--accent);
+        color: #0b1220;
+        animation: pop .4s ease forwards;
+    }
+    @keyframes pop { from { transform: scale(0);} to { transform: scale(1);} }
+    #audit-page .scanner-score {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 1rem;
+        padding-top: 1rem;
+        border-top: 1px solid rgba(255,255,255,.08);
+    }
+    #audit-page .gauge { position: relative; width: 58px; height: 58px; flex: none; }
+    #audit-page .gauge svg { transform: rotate(-90deg); }
+    #audit-page .gauge circle { fill: none; stroke-width: 5; }
+    #audit-page .gauge .track { stroke: rgba(255,255,255,.1); }
+    #audit-page .gauge .value {
+        stroke: var(--accent);
+        stroke-linecap: round;
+        stroke-dasharray: 151;
+        stroke-dashoffset: 151;
+        animation: fillGauge 3.6s ease-in-out infinite;
+    }
+    @keyframes fillGauge {
+        0% { stroke-dashoffset: 151; }
+        60% { stroke-dashoffset: 38; }
+        90% { stroke-dashoffset: 38; }
+        100% { stroke-dashoffset: 151; }
+    }
+    #audit-page .gauge-label {
+        position: absolute; inset: 0;
+        display: flex; align-items: center; justify-content: center;
+        font-size: .72rem; font-weight: 700; color: var(--white);
+    }
+    #audit-page .scanner-score p { font-size: .82rem; color: rgba(255,255,255,.6); }
+    #audit-page .scanner-score strong { display:block; color: var(--white); font-family:'Cardo', serif; font-size: 1rem; }
+ 
+   
+
+    /* ---------- INCLUDED GRID ---------- */
+    #audit-page .included { background: var(--paper); }
+    #audit-page .card-grid {
+        display: grid;
+        gap: 1.4rem;
+        grid-template-columns: 1fr;
+    }
+    
+
+
+    #audit-page .audit-card {
+        background: var(--white);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 1.6rem 1.5rem;
+        transition: var(--transition);
+    }
+    #audit-page .audit-card:hover {
+        border-color: var(--primary);
+        transform: translateY(-4px);
+        box-shadow: 0 16px 34px -18px rgba(15,23,42,.25);
+    }
+    #audit-page .audit-card .icon {
+        width: 42px; height: 42px;
+        border-radius: 9px;
+        display: flex; align-items: center; justify-content: center;
+        background: var(--dark);
+        color: var(--accent);
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    #audit-page .audit-card h3 { font-size: 1.08rem; margin-bottom: .4rem; }
+    #audit-page .audit-card p { font-size: .9rem; color: var(--ink-soft); margin-bottom: .7rem; }
+    #audit-page .audit-card ul { font-size: .86rem; color: var(--ink-soft); }
+    #audit-page .audit-card li { position: relative; padding-left: 1.1rem; margin-bottom: .35rem; }
+    #audit-page .audit-card li::before {
+        content: "";
+        position: absolute; left: 0; top: .55em;
+        width: 6px; height: 6px;
+        background: var(--primary);
+        border-radius: 1px;
+        transform: rotate(45deg);
+    }
+
+ 
+    #audit-page .benefit-list { display: grid; gap: .9rem; }
+    #audit-page .benefit-list li {
+        display: flex;
+        gap: .8rem;
+        align-items: flex-start;
+        font-size: .98rem;
+        color: var(--ink-soft);
+    }
+    #audit-page .benefit-list i {
+        color: var(--primary);
+        margin-top: .2rem;
+        flex: none;
+    }
+   
+
+    /* ---------- WHO BENEFITS ---------- */
+    #audit-page .who { background: var(--paper); }
+    #audit-page .chip-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .75rem;
+    }
+    #audit-page .chip {
+        background: var(--white);
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: .55rem 1.1rem;
+        font-size: .9rem;
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        gap: .5rem;
+    }
+    #audit-page .chip i { color: var(--primary); font-size: .82rem; }
+
+    /* ---------- PROCESS ---------- */
+    #audit-page .steps {
+        display: grid;
+        gap: 1.5rem;
+        counter-reset: step;
+    }
+    #audit-page .step {
+        position: relative;
+        padding: 1.8rem 1.4rem 1.4rem;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        background: var(--white);
+    }
+    #audit-page .step .num {
+        font-family: 'Cardo', serif;
+        font-size: 2.1rem;
+        font-weight: 700;
+        color: var(--line);
+        line-height: 1;
+        margin-bottom: .6rem;
+    }
+    #audit-page .step h3 { font-size: 1.02rem; margin-bottom: .4rem; }
+    #audit-page .step p { font-size: .88rem; color: var(--ink-soft); }
+    #audit-page .step:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        right: -0.85rem;
+        top: 50%;
+        width: 0; height: 0;
+        border-top: 6px solid transparent;
+        border-bottom: 6px solid transparent;
+        border-left: 8px solid var(--line);
+        display: none;
+    }
+  
+    /* ---------- WHY REQUEST ---------- */
+    #audit-page .request-band {
+        background: linear-gradient(135deg, #60a5fa, #3b82f6);
+        color: var(--white);
+        border-radius: 18px;
+        padding: 2.5rem;
+    }
+    #audit-page .request-band h2 { color: var(--white); }
+    #audit-page .request-list { display: grid; gap: .9rem; margin-top: 1.5rem; }
+    #audit-page .request-list li {
+        display: flex; gap: .7rem; align-items: flex-start;
+        font-size: .95rem;
+    }
+    #audit-page .request-list i { color: var(--accent); margin-top: .2rem; }
+
+    /* ---------- LIMITATIONS (wheat callout, echoes nav border) ---------- */
+    #audit-page .limits {
+        border: 1px solid var(--wheat);
+        background: #fffdf7;
+        border-radius: 14px;
+        padding: 2.2rem 2rem;
+    }
+    #audit-page .limits-head {
+        display: flex;
+        align-items: center;
+        gap: .7rem;
+        margin-bottom: 1rem;
+    }
+    #audit-page .limits-head .icon {
+        width: 34px; height: 34px;
+        border-radius: 8px;
+        background: var(--wheat);
+        display: flex; align-items: center; justify-content: center;
+        color: var(--dark);
+        flex: none;
+    }
+    #audit-page .limits-head h2 { font-size: 1.3rem; }
+    #audit-page .limits ul { display: grid; gap: .6rem; }
+    #audit-page .limits li {
+        font-size: .93rem;
+        color: var(--ink-soft);
+        padding-left: 1.1rem;
+        position: relative;
+    }
+    #audit-page .limits li::before {
+        content: "–";
+        position: absolute; left: 0; color: var(--gray);
+    }
+
+    /* ---------- FAQ ---------- */
+    #audit-page .faq-list { border-top: 1px solid var(--line); }
+    #audit-page .faq-item { border-bottom: 1px solid var(--line); }
+    #audit-page .faq-q {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        background: none;
+        border: none;
+        text-align: left;
+        padding: 1.25rem 0;
+        font-family: 'Cardo', serif;
+        font-size: 1.05rem;
+        font-weight: 700;
+        color: var(--ink);
+        cursor: pointer;
+    }
+    #audit-page .faq-q i {
+        color: var(--primary);
+        transition: transform .25s ease;
+        flex: none;
+    }
+    #audit-page .faq-item.open .faq-q i { transform: rotate(45deg); }
+    #audit-page .faq-a {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .3s ease;
+    }
+    #audit-page .faq-a p {
+        color: var(--ink-soft);
+        font-size: .95rem;
+        padding-bottom: 1.25rem;
+        max-width: 65ch;
+    }
+
+    /* ---------- FINAL CTA ---------- */
+    #audit-page .final-cta {
+    }
+    #audit-page .final-cta-inner {
+        max-width: 640px;
+        margin: 0 auto;
+    }
+    #audit-page .final-cta h2 { font-size: clamp(1.6rem, 4.5vw, 2.3rem); margin: .8rem 0 1rem; }
+    #audit-page .final-cta p { color: var(--ink-soft); margin-bottom: 2rem; }
+
+    #audit-page .sr-only {
+        position: absolute; width: 1px; height: 1px;
+        padding: 0; margin: -1px; overflow: hidden;
+        clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+    }
+
+  /* =========================
+   Mobile (<= 390px)
+========================= */
+@media (max-width: 390px) {
+    .container {
+        padding: 0 0.8rem;
+    }
+
+    .nav-flex {
+        gap: 20px;
+    }
+
+    .nav-flex img {
+        width: 130px;
+    }
+
+    .navbar {
+        padding-top: 0.5rem;
+    }
+
+    #audit-page .audit-card {
+        padding: 1rem 0.9rem;
+    }
+}
+
+/* =========================
+   Small Mobile (<= 700px)
+========================= */
+@media (max-width: 700px) {
+    #audit-page section {
+        padding: 2.5rem 0 1rem;
+    }
+
+    #audit-page .hero {
+        padding-top: 1.5rem;
+    }
+}
+
+/* =========================
+   Tablet & Mobile (<= 768px)
+========================= */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background: var(--white);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2rem;
+        transition: 0.4s;
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+
+    .nav-flex img {
+        width: 200px;
+    }
+    #audit-page .step {padding: 0.5rem; gap: 0.2rem;}
+        #audit-page .steps{gap: 0rem}
+#audit-page .request-band {padding: 1rem}
+#audit-page .limits {    padding: 1.2rem 1rem}
+    }
+
+
+/* =========================
+   Desktop (>= 640px)
+========================= */
+@media (min-width: 640px) {
+    #audit-page .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* =========================
+   Desktop (>= 700px)
+========================= */
+@media (min-width: 700px) {
+    #audit-page .request-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* =========================
+   Desktop (>= 768px)
+========================= */
+@media (min-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1.2fr 1fr 1fr;
+    }
+}
+
+/* =========================
+   Large Desktop (>= 900px)
+========================= */
+@media (min-width: 900px) {
+    #audit-page .hero-grid {
+        grid-template-columns: 1.05fr .95fr;
+    }
+
+    #audit-page .steps {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    #audit-page .step:not(:last-child)::after {
+        display: block;
+    }
+}
+
+/* =========================
+   Extra Large Desktop (>= 1000px)
+========================= */
+@media (min-width: 1000px) {
+    #audit-page .card-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* =========================
+   Accessibility
+========================= */
+@media (prefers-reduced-motion: reduce) {
+    #audit-page .scan-line,
+    #audit-page .gauge .value {
+        animation: none !important;
+    }
+}
+    </style>
+</head>
+<body>
+    <header class="navbar" id="main-nav">
+        <div class="container nav-flex">
+           <img src="C:\Users\USER\Documents\SEO-Insights-main\SEO-Insights-main\assets\images\navlogo.png" width="230" alt="SEO_insights_Logo">
+            
+            <button class="menu-toggle" aria-label="Toggle Menu">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav class="nav-links">
+                <a href="#hero" class="nav-link active">Home  <span class="dumbbell"></span></a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#tools" class="nav-link">Tools</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+        </div >
+    </header>
+
+    <main id="audit-page">
+
+        <!-- HERO -->
+        <section class="hero" id="audit-hero" aria-labelledby="audit-h1">
+            <div class="container hero-grid">
+                <div>
+                    <span class="eyebrow">Free SEO Audit</span>
+                    <h1 id="audit-h1">Find opportunities to improve your <em>search performance</em></h1>
+                    <p class="lede">Get a free SEO audit that identifies technical issues, on-page improvements, keyword opportunities, and other factors affecting your website's visibility in search engines.</p>
+                    <p>Whether you run a small business website, an online store, a blog, or a corporate website, a professional audit is the first step toward a stronger organic search strategy.</p>
+                    <div class="hero-actions">
+                        <a href="#audit-form" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass-chart"></i> Get a Free SEO Audit</a>
+                        <a href="#included" class="btn btn-ghost">See what's included</a>
+                    </div>
+                    <p class="hero-note" style="margin-top:1.25rem;"><i class="fa-solid fa-circle-check"></i> No cost to request an audit &middot; Practical recommendations, not guaranteed rankings</p>
+                </div>
+
+                <div class="scanner" aria-hidden="true">
+                    <div class="scanner-chrome">
+                        <span class="scanner-dot"></span><span class="scanner-dot"></span><span class="scanner-dot"></span>
+                        <span class="scanner-url">yourwebsite.com</span>
+                    </div>
+                    <div class="scanner-body">
+                        <div class="scan-line"></div>
+                        <div class="scan-row done"><span>Crawlability &amp; indexing</span><span class="status"><i class="fa-solid fa-check"></i></span></div>
+                        <div class="scan-row done"><span>Technical SEO</span><span class="status"><i class="fa-solid fa-check"></i></span></div>
+                        <div class="scan-row done"><span>On-page elements</span><span class="status"><i class="fa-solid fa-check"></i></span></div>
+                        <div class="scan-row"><span>Keyword opportunities</span><span class="status"><i class="fa-solid fa-check"></i></span></div>
+                        <div class="scan-row"><span>Content quality</span><span class="status"><i class="fa-solid fa-check"></i></span></div>
+                        <div class="scanner-score">
+                            <div class="gauge">
+                                <svg viewBox="0 0 60 60" width="58" height="58">
+                                    <circle class="track" cx="30" cy="30" r="24"></circle>
+                                    <circle class="value" cx="30" cy="30" r="24"></circle>
+                                </svg>
+                                <span class="gauge-label">Live</span>
+                            </div>
+                            <p><strong>Website health scan</strong> Illustrative preview — your audit covers the full checklist below.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHAT'S INCLUDED -->
+        <section class="included" id="included" aria-labelledby="included-h2">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">Full checklist</span>
+                    <h2 id="included-h2">What's included in your free SEO audit?</h2>
+                    <p>Every website is different, so our audit focuses on the areas that have the greatest impact on search visibility and user experience.</p>
+                </div>
+
+                <div class="card-grid">
+                    <article class="audit-card">
+                        <div class="icon"><i class="fa-solid fa-sitemap"></i></div>
+                        <h3>Website health review</h3>
+                        <p>We evaluate overall health to flag issues affecting crawling, indexing, and usability.</p>
+                        <ul>
+                            <li>Website structure</li>
+                            <li>Crawlability &amp; indexability</li>
+                            <li>Broken pages &amp; redirects</li>
+                            <li>Internal linking opportunities</li>
+                        </ul>
+                    </article>
+
+                    <article class="audit-card">
+                        <div class="icon"><i class="fa-solid fa-gears"></i></div>
+                        <h3>Technical SEO review</h3>
+                        <p>Technical SEO helps search engines understand and access your site efficiently.</p>
+                        <ul>
+                            <li>XML sitemap &amp; robots.txt</li>
+                            <li>Canonical tags &amp; HTTPS</li>
+                            <li>Mobile responsiveness</li>
+                            <li>Core Web Vitals overview</li>
+                        </ul>
+                    </article>
+
+                    <article class="audit-card">
+                        <div class="icon"><i class="fa-solid fa-heading"></i></div>
+                        <h3>On-page SEO analysis</h3>
+                        <p>Each important page should clearly communicate its purpose to users and search engines.</p>
+                        <ul>
+                            <li>Title tags &amp; meta descriptions</li>
+                            <li>Heading structure &amp; alt text</li>
+                            <li>URL structure</li>
+                            <li>Keyword relevance</li>
+                        </ul>
+                    </article>
+
+                    <article class="audit-card">
+                        <div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        <h3>Keyword opportunity analysis</h3>
+                        <p>Keyword research identifies the search terms your audience is already using.</p>
+                        <ul>
+                            <li>Current keyword opportunities</li>
+                            <li>Long-tail keyword ideas</li>
+                            <li>Search intent alignment</li>
+                            <li>Content gaps</li>
+                        </ul>
+                    </article>
+
+                    <article class="audit-card">
+                        <div class="icon"><i class="fa-solid fa-chess-knight"></i></div>
+                        <h3>Competitor snapshot</h3>
+                        <p>Understanding how competitors approach SEO can reveal new opportunities.</p>
+                        <ul>
+                            <li>Competitor keyword comparison</li>
+                            <li>Content opportunities</li>
+                            <li>Technical observations</li>
+                        </ul>
+                    </article>
+
+                    <article class="audit-card">
+                        <div class="icon"><i class="fa-solid fa-file-lines"></i></div>
+                        <h3>Content quality review</h3>
+                        <p>High-quality content helps users while supporting long-term SEO performance.</p>
+                        <ul>
+                            <li>Content relevance &amp; intent coverage</li>
+                            <li>Thin or duplicate content</li>
+                            <li>Readability</li>
+                        </ul>
+                    </article>
+
+                    <article class="audit-card">
+                        <div class="icon"><i class="fa-solid fa-compass"></i></div>
+                        <h3>User experience overview</h3>
+                        <p>Search performance is closely connected to user experience.</p>
+                        <ul>
+                            <li>Navigation structure</li>
+                            <li>Mobile usability</li>
+                            <li>Content accessibility</li>
+                        </ul>
+                    </article>
+
+                    <article class="audit-card">
+                        <div class="icon"><i class="fa-solid fa-gauge-high"></i></div>
+                        <h3>Performance overview</h3>
+                        <p>Website performance affects both visitors and search engines.</p>
+                        <ul>
+                            <li>Loading speed</li>
+                            <li>Image optimization opportunities</li>
+                            <li>Core Web Vitals observations</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY START WITH AN AUDIT -->
+        <section aria-labelledby="why-h2">
+            <div class="container why-grid">
+                <div>
+                    <span class="eyebrow">Why it matters</span>
+                    <h2 id="why-h2" style="font-size:clamp(1.6rem,4vw,2.35rem); margin:.6rem 0 1.2rem;">Why start with an SEO audit?</h2>
+                    <p style="color:var(--ink-soft); margin-bottom:1.5rem;">An audit helps identify issues before you invest time and resources into optimization. Instead of making assumptions, you'll receive recommendations based on your website's current condition.</p>
+                    <ul class="benefit-list">
+                        <li><i class="fa-solid fa-check"></i> Discover technical issues affecting visibility</li>
+                        <li><i class="fa-solid fa-check"></i> Improve website structure</li>
+                        <li><i class="fa-solid fa-check"></i> Identify keyword opportunities</li>
+                        <li><i class="fa-solid fa-check"></i> Understand competitor strengths</li>
+                        <li><i class="fa-solid fa-check"></i> Prioritize SEO improvements</li>
+                        <li><i class="fa-solid fa-check"></i> Enhance user experience</li>
+                        <li><i class="fa-solid fa-check"></i> Support long-term organic growth</li>
+                    </ul>
+                </div>
+            
+            </div>
+        </section>
+
+        <!-- WHO BENEFITS -->
+        <section class="who" aria-labelledby="who-h2">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">Built for every site</span>
+                    <h2 id="who-h2">Who can benefit from a free SEO audit?</h2>
+                    <p>Whether your website is new or established, an audit provides valuable insights into areas that may need attention.</p>
+                </div>
+                <div class="chip-row">
+                    <span class="chip"><i class="fa-solid fa-store"></i> Small businesses</span>
+                    <span class="chip"><i class="fa-solid fa-location-dot"></i> Local businesses</span>
+                    <span class="chip"><i class="fa-solid fa-cart-shopping"></i> Ecommerce websites</span>
+                    <span class="chip"><i class="fa-solid fa-rocket"></i> Startups</span>
+                    <span class="chip"><i class="fa-solid fa-building"></i> Corporate websites</span>
+                    <span class="chip"><i class="fa-solid fa-handshake"></i> Service-based businesses</span>
+                    <span class="chip"><i class="fa-solid fa-pen-nib"></i> Blogs</span>
+                    <span class="chip"><i class="fa-solid fa-people-group"></i> Agencies</span>
+                    <span class="chip"><i class="fa-solid fa-briefcase"></i> Portfolio websites</span>
+                    <span class="chip"><i class="fa-solid fa-graduation-cap"></i> Educational websites</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROCESS -->
+        <section aria-labelledby="process-h2">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">How it works</span>
+                    <h2 id="process-h2">Our SEO audit process</h2>
+                    <p>A straightforward, four-step review from submission to recommendations.</p>
+                </div>
+                <ol class="steps" style="list-style:none;">
+                    <li class="step">
+                        <div class="num">01</div>
+                        <h3>Website submission</h3>
+                        <p>Submit your website URL using our free audit form.</p>
+                    </li>
+                    <li class="step">
+                        <div class="num">02</div>
+                        <h3>Initial website review</h3>
+                        <p>We review the site's overall structure, technical setup, and search visibility.</p>
+                    </li>
+                    <li class="step">
+                        <div class="num">03</div>
+                        <h3>SEO analysis</h3>
+                        <p>Our team analyzes technical SEO, on-page elements, content quality, and opportunities.</p>
+                    </li>
+                    <li class="step">
+                        <div class="num">04</div>
+                        <h3>Findings &amp; recommendations</h3>
+                        <p>You'll receive a summary of key findings with practical recommendations.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- WHY REQUEST -->
+        <section aria-labelledby="request-h2">
+            <div class="container">
+                <div class="request-band">
+                    <h2 id="request-h2" style="font-size:clamp(1.5rem,4vw,2.1rem); margin-bottom:0;">Why request a free SEO audit?</h2>
+                    <ul class="request-list">
+                        <li><i class="fa-solid fa-check"></i> No cost to request an audit</li>
+                        <li><i class="fa-solid fa-check"></i> Helpful recommendations based on your website</li>
+                        <li><i class="fa-solid fa-check"></i> Focus on technical, on-page, and content improvements</li>
+                        <li><i class="fa-solid fa-check"></i> Suitable for websites of all sizes</li>
+                        <li><i class="fa-solid fa-check"></i> Easy submission through our online form</li>
+                    </ul>
+                    <div style="margin-top:2rem;">
+                        <a href="#audit-form" class="btn btn-primary" style="background:var(--white); color:var(--dark);">Request your audit <i class="fa-solid fa-arrow-right" style="color:var(--primary);"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LIMITATIONS -->
+        <section aria-labelledby="limits-h2">
+            <div class="container">
+                <div class="limits">
+                    <div class="limits-head">
+                        <span class="icon"><i class="fa-solid fa-scale-balanced"></i></span>
+                        <h2 id="limits-h2">Important limitations</h2>
+                    </div>
+                    <p style="color:var(--ink-soft); margin-bottom:1.2rem; max-width:70ch;">We believe in setting realistic expectations about SEO.</p>
+                    <ul>
+                        <li>A free audit provides recommendations, not guaranteed rankings.</li>
+                        <li>SEO improvements often require ongoing work and regular monitoring.</li>
+                        <li>Search engine algorithms change over time.</li>
+                        <li>Competitor activity can influence search performance.</li>
+                        <li>Some recommendations may require assistance from a web developer.</li>
+                        <li>Results depend on website quality, content, competition, and implementation.</li>
+                        <li>Organic growth typically takes time and varies between websites.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section aria-labelledby="faq-h2">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">Common questions</span>
+                    <h2 id="faq-h2">Frequently asked questions</h2>
+                </div>
+
+                <div class="faq-list" id="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-q" aria-expanded="false">Is the SEO audit really free? <i class="fa-solid fa-plus"></i></button>
+                        <div class="faq-a"><p>Yes. You can request a free SEO audit by submitting your website through our online form.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-q" aria-expanded="false">How long does the audit take? <i class="fa-solid fa-plus"></i></button>
+                        <div class="faq-a"><p>The review time depends on website size and current request volume. We'll contact you once your audit is complete.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-q" aria-expanded="false">Do you guarantee higher rankings? <i class="fa-solid fa-plus"></i></button>
+                        <div class="faq-a"><p>No. SEO involves many factors, and rankings cannot be guaranteed.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-q" aria-expanded="false">Will you review my competitors? <i class="fa-solid fa-plus"></i></button>
+                        <div class="faq-a"><p>Yes. When appropriate, we include a basic competitor overview to help identify opportunities.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-q" aria-expanded="false">Do I need technical knowledge? <i class="fa-solid fa-plus"></i></button>
+                        <div class="faq-a"><p>No. We explain our findings in clear, easy-to-understand language.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-q" aria-expanded="false">Can you audit ecommerce websites? <i class="fa-solid fa-plus"></i></button>
+                        <div class="faq-a"><p>Yes. We review ecommerce websites, business websites, blogs, and many other types of websites.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-q" aria-expanded="false">What happens after the audit? <i class="fa-solid fa-plus"></i></button>
+                        <div class="faq-a"><p>You'll receive recommendations that can help you prioritize improvements. You can choose to implement them yourself or seek professional assistance.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FINAL CTA -->
+        <section class="final-cta" id="audit-form" aria-labelledby="final-cta-h2">
+            <div class="container">
+                <div class="final-cta-inner">
+                    <span class="eyebrow">Get started</span>
+                    <h2 id="final-cta-h2">Get your free SEO audit</h2>
+                    <p>Understanding your website's strengths and areas for improvement is the first step toward better organic search performance. Our free SEO audit provides actionable insights to help you make informed SEO decisions.</p>
+                    <a href="#" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass-chart"></i> Submit your website via our audit form</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-about">
+
+                <img
+                    src="C:\Users\USER\Documents\SEO-Insights-main\SEO-Insights-main\assets\images\navlogo.png"
+                    alt="SEO Insights"
+                    class="footer-logo">
+
+                <p>
+                    Data-driven SEO strategies and digital marketing
+                    solutions designed for modern brands and solo creators.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+                <li><a href="#">Bulk URL Opener <i class="fa-solid fa-square-arrow-up-right"></i></a></li>
+                <li><a href="#">Diff Checker <i class="fa-solid fa-square-arrow-up-right"></i></a></li>
+                <li><a href="#">Online Text Editor <i class="fa-solid fa-square-arrow-up-right"></i></a></li>
+                <li><a href="#">Our Services <i class="fa-solid fa-square-arrow-up-right"></i></a></li>
+                <li><a href="#">Our Tools <i class="fa-solid fa-square-arrow-up-right"></i></a></li>
+                </ul>
+
+            </div>
+
+            <div class="footer-contact">
+
+                <h3>Contact</h3>
+
+                <a href="mailto:support@theseoinsights.com">
+                    support@theseoinsights.com
+                </a>
+
+                <div class="socials">
+
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            SEO Insights © 2026. All rights reserved.
+        </div>
+
+    </div>
+
+</footer>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "SEO Audit",
+      "provider": {
+        "@type": "Organization",
+        "name": "SEO Insights",
+        "email": "support@theseoinsights.com"
+      },
+      "name": "Free SEO Audit",
+      "description": "A free SEO audit identifying technical issues, on-page improvements, keyword opportunities, and content quality factors affecting a website's search visibility.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "Is the SEO audit really free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. You can request a free SEO audit by submitting your website through our online form."}},
+        {"@type": "Question", "name": "How long does the audit take?", "acceptedAnswer": {"@type": "Answer", "text": "The review time depends on website size and current request volume. We'll contact you once your audit is complete."}},
+        {"@type": "Question", "name": "Do you guarantee higher rankings?", "acceptedAnswer": {"@type": "Answer", "text": "No. SEO involves many factors, and rankings cannot be guaranteed."}},
+        {"@type": "Question", "name": "Will you review my competitors?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. When appropriate, we include a basic competitor overview to help identify opportunities."}},
+        {"@type": "Question", "name": "Do I need technical knowledge?", "acceptedAnswer": {"@type": "Answer", "text": "No. We explain our findings in clear, easy-to-understand language."}},
+        {"@type": "Question", "name": "Can you audit ecommerce websites?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We review ecommerce websites, business websites, blogs, and many other types of websites."}},
+        {"@type": "Question", "name": "What happens after the audit?", "acceptedAnswer": {"@type": "Answer", "text": "You'll receive recommendations that can help you prioritize improvements. You can choose to implement them yourself or seek professional assistance."}}
+      ]
+    }
+    </script>
+
+<script>
+    // Mobile Menu Toggle
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
+// Scroll Highlighting Logic (Intersection Observer)
+// This is better for performance than 'window.onscroll'
+const sections = document.querySelectorAll('section');
+const navItems = document.querySelectorAll('.nav-link');
+
+const observerOptions = {
+    threshold: 0.5
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            navItems.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === entry.target.id) {
+                    link.classList.add('active');
+                }
+            });
+        }
+    });
+}, observerOptions);
+
+sections.forEach(section => observer.observe(section));
+
+// Smooth Scroll for Navigation
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        navLinks.classList.remove('active'); // Close mobile menu on click
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+});
+</script>
+
+<script>
+    // FAQ accordion
+    document.querySelectorAll('#faq-list .faq-item').forEach((item) => {
+        const btn = item.querySelector('.faq-q');
+        const answer = item.querySelector('.faq-a');
+        btn.addEventListener('click', () => {
+            const isOpen = item.classList.contains('open');
+            document.querySelectorAll('#faq-list .faq-item.open').forEach((openItem) => {
+                if (openItem !== item) {
+                    openItem.classList.remove('open');
+                    openItem.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+                    openItem.querySelector('.faq-a').style.maxHeight = null;
+                }
+            });
+            if (isOpen) {
+                item.classList.remove('open');
+                btn.setAttribute('aria-expanded', 'false');
+                answer.style.maxHeight = null;
+            } else {
+                item.classList.add('open');
+                btn.setAttribute('aria-expanded', 'true');
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+            }
+        });
+    });
+
+    // Lazy-friendly reveal for audit cards (respects reduced motion)
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window) {
+        const revealTargets = document.querySelectorAll('#audit-page .audit-card, #audit-page .step, #audit-page .chip');
+        revealTargets.forEach((el) => { el.style.opacity = '0'; el.style.transform = 'translateY(10px)'; el.style.transition = 'opacity .5s ease, transform .5s ease'; });
+        const revealObserver = new IntersectionObserver((entries, obs) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                    obs.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+        revealTargets.forEach((el) => revealObserver.observe(el));
+    }
+</script>
+</body>
+</html>

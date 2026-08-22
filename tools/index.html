@@ -1,0 +1,980 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All SEO Tools | Free Tools for Technical, On-Page &amp; Content SEO | SEO Insights</title>
+    <meta name="description" content="Browse every free SEO tool in one place — search by name or by what you're trying to do. Technical SEO, content, keyword, and productivity tools, no sign-up required.">
+    <link rel="canonical" href="https://www.theseoinsights.com/tools">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+    :root {
+    --primary: #2563eb;
+    --dark: #0f172a;
+    --light: #f8fafc;
+    --gray: #64748b;
+    --white: #ffffff;
+    --transition: all 0.3s ease;
+    --lighhtgray: #f5deb3;
+}
+
+/* Base Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', system-ui, sans-serif; line-height: 1.6; color: var(--dark); overflow-x: hidden; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+
+a { text-decoration: none; color: inherit; transition: var(--transition); }
+ul { list-style: none; }
+
+/* Navbar Component */
+.navbar {
+    position: sticky; top: 0; background: var(--white);
+    padding: 1rem 0 0.5rem 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    
+}
+.nav-flex { display: flex; justify-content: space-between; align-items: center; padding-bottom:8px !important; border-bottom: 8px solid var(--lighhtgray); border-radius: 10px; font-family: "Cardo", serif; font-weight: 700; font-style: normal;}
+
+.nav-links { display: flex; gap: 2rem; }
+.nav-link { position: relative; text-decoration: none;  font-weight: 700; font-size: 0.95rem; }
+
+
+.dumbbell {
+  display: block;
+  height: 3px;
+  background: black;
+  width: 100%;
+  position: relative;
+}
+
+.dumbbell::before,
+.dumbbell::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  width: 8px;
+  height: 8px;
+  background: black;
+  border-radius: 50%;
+}
+
+.dumbbell::before { left: 0; }
+.dumbbell::after { right: 0; }
+
+/* Mobile Menu Button */
+.menu-toggle { display: none; background: none; border: none; cursor: pointer; }
+.hamburger { width: 25px; height: 2px; background: var(--dark); display: block; position: relative; }
+.hamburger::before, .hamburger::after { content: ''; width: 100%; height: 2px; background: var(--dark); position: absolute; left: 0; }
+.hamburger::before { top: -8px; } .hamburger::after { bottom: -8px; }
+
+/* ===================
+   FOOTER
+=================== */
+
+.site-footer{
+    background:linear-gradient(
+    135deg,
+    #60a5fa,
+    #3b82f6);
+    color:white;
+}
+
+.footer-grid{
+    display:grid;
+    gap:2rem;
+    padding:3rem 0;
+}
+
+.footer-logo{
+    width:250px;
+    margin-bottom:1rem;
+}
+
+.footer-links h3,
+.footer-contact h3{
+    margin-bottom:1rem;
+    color:#d9ff5a;
+}
+
+.footer-links ul{
+    list-style:none;
+}
+
+.footer-links li{
+    margin-bottom:.75rem;
+}
+
+.footer-links a{
+    color:white;
+}
+
+.footer-contact a{
+    color:white;
+    display:block;
+    margin-bottom:1rem;
+}
+
+.socials{
+    display:flex;
+    gap:1rem;
+}
+
+.socials a{
+    color:white;
+    font-size:2rem;
+}
+
+.copyright{
+    text-align:center;
+    padding:1rem;
+    border-top:1px solid rgba(255,255,255,.2);
+}
+
+
+@media (max-width: 768px) {
+    .menu-toggle { display: block; }
+    .nav-links {
+        position: fixed; top: 70px; left: -100%; width: 100%; height: calc(100vh - 70px);
+        background: var(--white); flex-direction: column; align-items: center;
+        padding-top: 2rem; transition: 0.4s;
+    }
+    .nav-links.active { left: 0; }
+    
+    .nav-flex img{width: 200px;}
+
+}
+@media (max-width: 390px) {
+    .nav-flex{gap: 20px}
+    .nav-flex img{width: 130px;}
+    .navbar{padding-top: 0.5rem;}
+      
+}
+@media (min-width: 768px) {
+
+  
+    .footer-grid{
+        grid-template-columns:
+        1.2fr
+        1fr
+        1fr;
+    }
+
+
+
+}
+
+</style>
+
+    <!-- ============================================
+         Page-specific styles for the All Tools page.
+         Nothing above this comment (nav/footer CSS) has
+         been changed. Everything below is scoped to
+         elements inside <main id="tools-page">.
+    ============================================= -->
+    <style>
+    #tools-page {
+        --accent: #d9ff5a;
+        --wheat: #f5deb3;
+        --ink: #0f172a;
+        --ink-soft: #475569;
+        --paper: #f8fafc;
+        --line: #e2e8f0;
+        font-family: 'Inter', system-ui, sans-serif;
+        color: var(--ink);
+        overflow-x: hidden;
+    }
+
+    #tools-page h1,
+    #tools-page h2,
+    #tools-page h3,
+    #tools-page .display { font-family: 'Cardo', serif; font-weight: 700; line-height: 1.15; letter-spacing: -0.01em; }
+
+    #tools-page .eyebrow {
+        display: inline-flex; align-items: center; gap: .5rem;
+        font-family: 'Inter', system-ui, sans-serif; font-size: .78rem; font-weight: 700;
+        letter-spacing: .12em; text-transform: uppercase; color: var(--primary);
+    }
+    #tools-page .eyebrow::before {
+        content: ""; width: 22px; height: 3px; background: var(--accent); border-radius: 2px;
+        box-shadow: 0 0 0 1px var(--primary) inset;
+    }
+
+    #tools-page section { padding: 3.5rem 0; }
+    #tools-page .section-head { max-width: 640px; margin: 0 0 2.25rem; }
+    #tools-page .section-head h2 { font-size: clamp(1.5rem, 4vw, 2.2rem); margin: .6rem 0 .8rem; }
+    #tools-page .section-head p { color: var(--ink-soft); font-size: 1rem; }
+
+    #tools-page .btn {
+        display: inline-flex; align-items: center; gap: .55rem; font-weight: 700; font-size: .92rem;
+        padding: .8rem 1.4rem; border-radius: 8px; border: 2px solid transparent; cursor: pointer;
+        transition: var(--transition); white-space: nowrap;
+    }
+    #tools-page .btn-primary { background: var(--dark); color: var(--white); }
+    #tools-page .btn-primary:hover { background: var(--primary); transform: translateY(-2px); box-shadow: 0 10px 24px -10px rgba(37,99,235,.55); }
+    #tools-page .btn-primary i { color: var(--accent); }
+    #tools-page .btn-block { width: 100%; justify-content: center; }
+
+    /* ---------- HERO + SEARCH ---------- */
+    #tools-page .hero {
+        padding-top: 3rem; padding-bottom: 2.5rem;
+        background: radial-gradient(circle at 85% 10%, rgba(37,99,235,.08), transparent 45%), var(--white);
+        text-align: center;
+    }
+    #tools-page .hero h1 { font-size: clamp(2rem, 6vw, 3.1rem); margin: .9rem auto .8rem; max-width: 18ch; }
+    #tools-page .hero p.lede { color: var(--ink-soft); max-width: 56ch; margin: 0 auto 2rem; font-size: 1.03rem; }
+    #tools-page .eyebrow { justify-content: center; }
+
+    #tools-page .search-wrap { max-width: 620px; margin: 0 auto; }
+    #tools-page .search-box {
+        position: relative; display: flex; align-items: center; gap: .6rem;
+        background: var(--white); border: 2px solid var(--dark); border-radius: 12px;
+        padding: .55rem .6rem .55rem 1.1rem; box-shadow: 0 12px 30px -18px rgba(15,23,42,.4);
+    }
+    #tools-page .search-box i.fa-magnifying-glass { color: var(--primary); font-size: 1rem; flex: none; }
+    #tools-page #tool-search {
+        flex: 1; border: none; outline: none; font-size: 1rem; font-family: inherit;
+        background: transparent; color: var(--ink); min-width: 0;
+    }
+    #tools-page #tool-search::placeholder { color: #94a3b8; }
+    #tools-page .search-clear {
+        border: none; background: var(--paper); color: var(--ink-soft); width: 30px; height: 30px;
+        border-radius: 8px; cursor: pointer; display: none; align-items: center; justify-content: center; flex: none;
+    }
+    #tools-page .search-clear.show { display: flex; }
+    #tools-page .search-go {
+        border: none; background: var(--dark); color: var(--white); padding: .65rem 1.1rem;
+        border-radius: 8px; font-weight: 700; font-size: .9rem; cursor: pointer; flex: none;
+    }
+    #tools-page .search-go:hover { background: var(--primary); }
+    #tools-page .search-meta {
+        margin-top: .8rem; font-size: .85rem; color: var(--ink-soft); min-height: 1.2em;
+    }
+    #tools-page .search-meta strong { color: var(--ink); }
+
+    #tools-page .chip-row { display: flex; flex-wrap: wrap; gap: .55rem; justify-content: center; margin-top: 1.1rem; }
+    #tools-page .quick-chip {
+        border: 1px solid var(--line); background: var(--white); border-radius: 999px;
+        padding: .4rem .9rem; font-size: .82rem; font-weight: 600; color: var(--ink-soft);
+        cursor: pointer; transition: var(--transition);
+    }
+    #tools-page .quick-chip:hover, #tools-page .quick-chip.active {
+        border-color: var(--primary); color: var(--primary); background: #eff6ff;
+    }
+
+    /* ---------- TOOL GRID ---------- */
+    #tools-page .tools-section { background: var(--paper); }
+    #tools-page .tool-grid {
+        display: grid; gap: 1.4rem; grid-template-columns: 1fr;
+    }
+    @media (min-width: 640px) { #tools-page .tool-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 1000px) { #tools-page .tool-grid { grid-template-columns: repeat(3, 1fr); } }
+
+    #tools-page .tool-card {
+        background: var(--white); border: 1px solid var(--line); border-radius: 14px;
+        padding: 1.5rem; display: flex; flex-direction: column; transition: var(--transition);
+    }
+    #tools-page .tool-card:hover { border-color: var(--primary); transform: translateY(-4px); box-shadow: 0 18px 36px -20px rgba(15,23,42,.28); }
+    #tools-page .tool-thumb {
+        width: 52px; height: 52px; border-radius: 12px; background: var(--dark);
+        display: flex; align-items: center; justify-content: center; margin-bottom: 1.1rem; flex: none;
+    }
+    #tools-page .tool-thumb svg { width: 26px; height: 26px; }
+    #tools-page .tool-card h3 { font-size: 1.1rem; margin-bottom: .5rem; }
+    #tools-page .tool-card p { color: var(--ink-soft); font-size: .9rem; margin-bottom: 1.3rem; flex: 1; }
+    #tools-page .tool-card .btn { align-self: flex-start; }
+    #tools-page .tool-card .tag-row { display: none; }
+
+    #tools-page .no-results {
+        display: none; text-align: center; padding: 3rem 1rem; color: var(--ink-soft);
+        border: 1px dashed var(--line); border-radius: 14px; background: var(--white);
+    }
+    #tools-page .no-results.show { display: block; }
+    #tools-page .no-results i { font-size: 1.6rem; color: var(--primary); margin-bottom: .8rem; display: block; }
+
+    /* ---------- PLAYGROUND (signature drag mini-game) ---------- */
+    #tools-page .playground {
+        position: relative;
+        background: var(--dark);
+        border-radius: 18px;
+        min-height: 320px;
+        overflow: hidden;
+        touch-action: none;
+        border: 1px solid rgba(255,255,255,.06);
+    }
+    #tools-page .playground::before {
+        content: "";
+        position: absolute; inset: 0;
+        background: radial-gradient(circle at 20% 20%, rgba(37,99,235,.25), transparent 50%),
+                    radial-gradient(circle at 80% 80%, rgba(217,255,90,.12), transparent 50%);
+        pointer-events: none;
+    }
+    #tools-page .playground-hint {
+        position: absolute; top: 1rem; left: 50%; transform: translateX(-50%);
+        font-size: .78rem; letter-spacing: .06em; text-transform: uppercase; font-weight: 700;
+        color: rgba(255,255,255,.55); display: flex; align-items: center; gap: .4rem;
+        pointer-events: none; z-index: 5;
+    }
+    #tools-page .drag-bubble {
+        position: absolute;
+        display: inline-flex; align-items: center; gap: .4rem;
+        background: var(--white); color: var(--dark);
+        font-weight: 700; font-size: .85rem;
+        padding: .55rem 1rem; border-radius: 999px;
+        box-shadow: 0 10px 22px -8px rgba(0,0,0,.5);
+        user-select: none; -webkit-user-select: none;
+        width: max-content; height: max-content;
+        touch-action: none;
+    }
+    #tools-page .drag-bubble.cursor-grab { cursor: grab; }
+    #tools-page .drag-bubble.active\:cursor-grabbing:active,
+    #tools-page .drag-bubble.grabbing { cursor: grabbing; }
+    #tools-page .drag-bubble i { color: var(--primary); font-size: .8rem; }
+    #tools-page .drag-bubble.dragging { box-shadow: 0 20px 40px -12px rgba(0,0,0,.6); z-index: 20; }
+
+    /* ---------- BENEFITS ---------- */
+    #tools-page .benefit-list { display: grid; gap: .9rem; }
+    @media (min-width: 700px) { #tools-page .benefit-list { grid-template-columns: 1fr 1fr; } }
+    #tools-page .benefit-list li { display: flex; gap: .7rem; align-items: flex-start; font-size: .95rem; color: var(--ink-soft); }
+    #tools-page .benefit-list i { color: var(--primary); margin-top: .2rem; flex: none; }
+
+    /* ---------- FAQ ---------- */
+    #tools-page .faq-list { border-top: 1px solid var(--line); }
+    #tools-page .faq-item { border-bottom: 1px solid var(--line); }
+    #tools-page .faq-q {
+        width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+        background: none; border: none; text-align: left; padding: 1.2rem 0;
+        font-family: 'Cardo', serif; font-size: 1.03rem; font-weight: 700; color: var(--ink); cursor: pointer;
+    }
+    #tools-page .faq-q i { color: var(--primary); transition: transform .25s ease; flex: none; }
+    #tools-page .faq-item.open .faq-q i { transform: rotate(45deg); }
+    #tools-page .faq-a { max-height: 0; overflow: hidden; transition: max-height .3s ease; }
+    #tools-page .faq-a p { color: var(--ink-soft); font-size: .93rem; padding-bottom: 1.2rem; max-width: 65ch; }
+
+    /* ---------- FINAL CTA ---------- */
+    #tools-page .final-cta { text-align: center; }
+    #tools-page .final-cta-inner { max-width: 600px; margin: 0 auto; }
+    #tools-page .final-cta h2 { font-size: clamp(1.5rem, 4.5vw, 2.1rem); margin: .8rem 0 1rem; }
+    #tools-page .final-cta p { color: var(--ink-soft); margin-bottom: 1.8rem; }
+
+    #tools-page .sr-only {
+        position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden;
+        clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        #tools-page * { scroll-behavior: auto !important; }
+    }
+    </style>
+</head>
+<body>
+    <header class="navbar" id="main-nav">
+        <div class="container nav-flex">
+           <img src="C:\Users\USER\Documents\SEO-Insights-main\SEO-Insights-main\assets\images\navlogo.png" width="230" alt="SEO_insights_Logo">
+            
+            <button class="menu-toggle" aria-label="Toggle Menu">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav class="nav-links">
+                <a href="#hero" class="nav-link active">Home  <span class="dumbbell"></span></a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#tools" class="nav-link">Tools</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+        </div >
+    </header>
+
+    <main id="tools-page">
+
+        <!-- HERO + SEARCH -->
+        <section class="hero" id="tools-hero" aria-labelledby="tools-h1">
+            <div class="container">
+                <span class="eyebrow">All tools, one place</span>
+                <h1 id="tools-h1">Every free SEO tool you need, searchable in one spot</h1>
+                <p class="lede">Type what you're looking for — a tool name, or just what you're trying to do, like "check my sitemap" or "compare two files" — and we'll find the right tool.</p>
+
+                <div class="search-wrap">
+                    <form class="search-box" id="tool-search-form" role="search">
+                        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                        <label for="tool-search" class="sr-only">Search SEO tools</label>
+                        <input type="search" id="tool-search" name="tool-search" placeholder="Search tools — e.g. &quot;broken links&quot; or &quot;word count&quot;" autocomplete="off">
+                        <button type="button" class="search-clear" id="tool-search-clear" aria-label="Clear search"><i class="fa-solid fa-xmark"></i></button>
+                        <button type="submit" class="search-go">Search</button>
+                    </form>
+                    <p class="search-meta" id="search-meta" aria-live="polite">Showing all <strong id="tool-total-count">0</strong> tools</p>
+                    <div class="chip-row" id="quick-chips">
+                        <button type="button" class="quick-chip active" data-filter="">All</button>
+                        <button type="button" class="quick-chip" data-filter="technical">Technical</button>
+                        <button type="button" class="quick-chip" data-filter="content">Content</button>
+                        <button type="button" class="quick-chip" data-filter="keyword">Keyword</button>
+                        <button type="button" class="quick-chip" data-filter="productivity">Productivity</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TOOL GRID -->
+        <section class="tools-section" id="tools" aria-labelledby="tools-grid-h2">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">Browse tools</span>
+                    <h2 id="tools-grid-h2">Pick a tool and get straight to work</h2>
+                    <p>Every tool below is free to use, with no sign-up required to get a result.</p>
+                </div>
+
+                <div class="tool-grid" id="tool-grid" aria-live="polite"></div>
+
+                <div class="no-results" id="no-results">
+                    <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                    <p>No tools match "<span id="no-results-term"></span>". Try a different word, or <a href="#tools-hero" id="reset-search-link" style="color:var(--primary); font-weight:700;">clear the search</a>.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PLAYGROUND / MINI GAME -->
+        <section class="playground-section" aria-labelledby="playground-h2">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">Just for fun</span>
+                    <h2 id="playground-h2">Drag the tags around while you decide</h2>
+                    <p>Not part of the audit — just a small break. Grab a tag and move it wherever you like.</p>
+                </div>
+
+                <div class="playground" id="playground" role="application" aria-label="Draggable tag playground — decorative, not required for site navigation">
+                    <span class="playground-hint"><i class="fa-solid fa-hand-pointer"></i> Drag me around</span>
+                    <div class="drag-bubble cursor-grab active:cursor-grabbing" style="left:8%; top:22%;" tabindex="0"><i class="fa-solid fa-tag"></i>keywords</div>
+                    <div class="drag-bubble cursor-grab active:cursor-grabbing" style="left:60%; top:15%;" tabindex="0"><i class="fa-solid fa-tag"></i>backlinks</div>
+                    <div class="drag-bubble cursor-grab active:cursor-grabbing" style="left:30%; top:55%;" tabindex="0"><i class="fa-solid fa-tag"></i>meta tags</div>
+                    <div class="drag-bubble cursor-grab active:cursor-grabbing" style="left:70%; top:60%;" tabindex="0"><i class="fa-solid fa-tag"></i>sitemap</div>
+                    <div class="drag-bubble cursor-grab active:cursor-grabbing" style="left:45%; top:35%;" tabindex="0"><i class="fa-solid fa-tag"></i>core web vitals</div>
+                    <div class="drag-bubble cursor-grab active:cursor-grabbing" style="left:15%; top:75%;" tabindex="0"><i class="fa-solid fa-tag"></i>alt text</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BENEFITS -->
+        <section aria-labelledby="why-h2">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">Why these tools</span>
+                    <h2 id="why-h2">Built to save you time, not collect your email</h2>
+                </div>
+                <ul class="benefit-list">
+                    <li><i class="fa-solid fa-check"></i> Free to use, with no account required for a basic result</li>
+                    <li><i class="fa-solid fa-check"></i> Fast, lightweight tools that load quickly on any device</li>
+                    <li><i class="fa-solid fa-check"></i> Clear, plain-language output — no jargon dumps</li>
+                    <li><i class="fa-solid fa-check"></i> Works on desktop and mobile</li>
+                    <li><i class="fa-solid fa-check"></i> Regularly reviewed and updated</li>
+                    <li><i class="fa-solid fa-check"></i> Backed by our <a href="#" style="color:var(--primary); font-weight:700;">free SEO audit</a> if you want a deeper review</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section aria-labelledby="faq-h2">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">Common questions</span>
+                    <h2 id="faq-h2">Frequently asked questions</h2>
+                </div>
+                <div class="faq-list" id="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-q" aria-expanded="false">Are these tools really free? <i class="fa-solid fa-plus"></i></button>
+                        <div class="faq-a"><p>Yes. Every tool listed here is free to use for a basic result, with no sign-up required.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-q" aria-expanded="false">How does the search work? <i class="fa-solid fa-plus"></i></button>
+                        <div class="faq-a"><p>You can search by a tool's exact name, or describe what you're trying to do — the search matches related terms too, so "check my pages load speed" will still surface the right tool.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-q" aria-expanded="false">Do I need technical knowledge to use these tools? <i class="fa-solid fa-plus"></i></button>
+                        <div class="faq-a"><p>No. Each tool is built for plain-language input and output, so no coding or SEO background is required.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-q" aria-expanded="false">Can I use these tools on mobile? <i class="fa-solid fa-plus"></i></button>
+                        <div class="faq-a"><p>Yes. Every tool on this page is built mobile-first and works on phones, tablets, and desktops.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-q" aria-expanded="false">What if I can't find the tool I need? <i class="fa-solid fa-plus"></i></button>
+                        <div class="faq-a"><p>Try a different search term, or reach out to us directly — we're always adding new tools based on requests.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FINAL CTA -->
+        <section class="final-cta" id="contact" aria-labelledby="final-cta-h2">
+            <div class="container">
+                <div class="final-cta-inner">
+                    <span class="eyebrow" style="justify-content:center;">Need more than a tool?</span>
+                    <h2 id="final-cta-h2">Get a full, free SEO audit instead</h2>
+                    <p>If you'd rather have a complete health check of your site — technical, on-page, and content — request a free audit and we'll do the digging for you.</p>
+                    <a href="#" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass-chart"></i> Get a Free SEO Audit</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-about">
+
+                <img
+                    src="C:\Users\USER\Documents\SEO-Insights-main\SEO-Insights-main\assets\images\navlogo.png"
+                    alt="SEO Insights"
+                    class="footer-logo">
+
+                <p>
+                    Data-driven SEO strategies and digital marketing
+                    solutions designed for modern brands and solo creators.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+                <li><a href="#">Bulk URL Opener <i class="fa-solid fa-square-arrow-up-right"></i></a></li>
+                <li><a href="#">Diff Checker <i class="fa-solid fa-square-arrow-up-right"></i></a></li>
+                <li><a href="#">Online Text Editor <i class="fa-solid fa-square-arrow-up-right"></i></a></li>
+                <li><a href="#">Our Services <i class="fa-solid fa-square-arrow-up-right"></i></a></li>
+                <li><a href="#">Our Tools <i class="fa-solid fa-square-arrow-up-right"></i></a></li>
+                </ul>
+
+            </div>
+
+            <div class="footer-contact">
+
+                <h3>Contact</h3>
+
+                <a href="mailto:support@theseoinsights.com">
+                    support@theseoinsights.com
+                </a>
+
+                <div class="socials">
+
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            SEO Insights © 2026. All rights reserved.
+        </div>
+
+    </div>
+
+</footer>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "All SEO Tools",
+      "description": "A searchable directory of free SEO tools covering technical SEO, content, keyword research, and productivity.",
+      "url": "https://www.theseoinsights.com/tools"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "Are these tools really free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Every tool listed here is free to use for a basic result, with no sign-up required."}},
+        {"@type": "Question", "name": "How does the search work?", "acceptedAnswer": {"@type": "Answer", "text": "You can search by a tool's exact name, or describe what you're trying to do — the search matches related terms too."}},
+        {"@type": "Question", "name": "Do I need technical knowledge to use these tools?", "acceptedAnswer": {"@type": "Answer", "text": "No. Each tool is built for plain-language input and output, so no coding or SEO background is required."}},
+        {"@type": "Question", "name": "Can I use these tools on mobile?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Every tool on this page is built mobile-first and works on phones, tablets, and desktops."}},
+        {"@type": "Question", "name": "What if I can't find the tool I need?", "acceptedAnswer": {"@type": "Answer", "text": "Try a different search term, or reach out to us directly — we're always adding new tools based on requests."}}
+      ]
+    }
+    </script>
+
+<script>
+    // Mobile Menu Toggle
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
+// Scroll Highlighting Logic (Intersection Observer)
+// This is better for performance than 'window.onscroll'
+const sections = document.querySelectorAll('section');
+const navItems = document.querySelectorAll('.nav-link');
+
+const observerOptions = {
+    threshold: 0.5
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            navItems.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === entry.target.id) {
+                    link.classList.add('active');
+                }
+            });
+        }
+    });
+}, observerOptions);
+
+sections.forEach(section => observer.observe(section));
+
+// Smooth Scroll for Navigation
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        navLinks.classList.remove('active'); // Close mobile menu on click
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+});
+</script>
+
+<script>
+(function () {
+    /* ---------------------------------------------------------
+       TOOL DATA
+       tags[] = words/synonyms a person might type instead of the
+       tool's exact name — this is what powers "indirect" search.
+    --------------------------------------------------------- */
+    const TOOLS = [
+        {
+            id: "bulk-url-opener",
+            title: "Bulk URL Opener",
+            description: "Paste a list of URLs and open them all at once — handy for quickly checking a batch of pages.",
+            category: "productivity",
+            icon: "fa-solid fa-up-right-from-square",
+            tags: ["open multiple links", "open many urls", "open tabs", "list of links", "batch open"]
+        },
+        {
+            id: "diff-checker",
+            title: "Diff Checker",
+            description: "Compare two blocks of text or code side by side and instantly spot what changed.",
+            category: "productivity",
+            icon: "fa-solid fa-code-compare",
+            tags: ["compare text", "compare two files", "text comparison", "find differences", "compare code"]
+        },
+        {
+            id: "online-text-editor",
+            title: "Online Text Editor",
+            description: "A simple, distraction-free text editor for drafting and cleaning up content in your browser.",
+            category: "content",
+            icon: "fa-solid fa-pen-to-square",
+            tags: ["write text", "notes", "draft content", "edit text online", "plain text editor"]
+        },
+        {
+            id: "keyword-density-checker",
+            title: "Keyword Density Checker",
+            description: "See how often your target keywords appear in a page and whether they're over- or under-used.",
+            category: "keyword",
+            icon: "fa-solid fa-chart-simple",
+            tags: ["keyword frequency", "keyword stuffing check", "keyword count", "keyword ratio"]
+        },
+        {
+            id: "meta-tag-generator",
+            title: "Meta Tag Generator",
+            description: "Generate optimized title tags and meta descriptions that fit search engine display limits.",
+            category: "technical",
+            icon: "fa-solid fa-tags",
+            tags: ["title tag generator", "meta description generator", "seo tags", "page title length"]
+        },
+        {
+            id: "robots-txt-generator",
+            title: "Robots.txt Generator",
+            description: "Create a valid robots.txt file to control which pages search engines can crawl.",
+            category: "technical",
+            icon: "fa-solid fa-robot",
+            tags: ["block crawlers", "control indexing", "crawl rules", "disallow pages"]
+        },
+        {
+            id: "sitemap-generator",
+            title: "XML Sitemap Generator",
+            description: "Build a clean XML sitemap so search engines can discover and index your pages faster.",
+            category: "technical",
+            icon: "fa-solid fa-sitemap",
+            tags: ["sitemap", "check my sitemap", "site structure file", "indexing help"]
+        },
+        {
+            id: "word-counter",
+            title: "Word &amp; Character Counter",
+            description: "Count words, characters, and reading time for any piece of content before you publish.",
+            category: "content",
+            icon: "fa-solid fa-calculator",
+            tags: ["word count", "character count", "text length", "reading time"]
+        },
+        {
+            id: "serp-preview",
+            title: "SERP Snippet Preview",
+            description: "Preview how your title and meta description will look on the search results page.",
+            category: "keyword",
+            icon: "fa-solid fa-desktop",
+            tags: ["search preview", "google snippet", "how my listing looks", "search result preview"]
+        },
+        {
+            id: "broken-link-checker",
+            title: "Broken Link Checker",
+            description: "Scan a page or site for broken links and dead pages that hurt user experience and crawling.",
+            category: "technical",
+            icon: "fa-solid fa-link-slash",
+            tags: ["dead links", "404 checker", "find broken links", "link errors"]
+        },
+        {
+            id: "page-speed-checker",
+            title: "Page Speed Checker",
+            description: "Check how fast your pages load and get a plain-language breakdown of what's slowing you down.",
+            category: "technical",
+            icon: "fa-solid fa-gauge-high",
+            tags: ["site speed", "core web vitals", "loading time", "performance check"]
+        },
+        {
+            id: "readability-checker",
+            title: "Readability Checker",
+            description: "Analyze your content's readability score and get suggestions to make it easier to skim.",
+            category: "content",
+            icon: "fa-solid fa-book-open",
+            tags: ["reading level", "content clarity", "how easy to read", "readability score"]
+        }
+    ];
+
+    /* Lightweight synonym map for "semantic" style search —
+       expands a query into related words before matching. */
+    const SYNONYMS = {
+        speed: ["fast", "loading", "performance", "slow"],
+        picture: ["image", "images"],
+        image: ["picture", "images", "alt"],
+        content: ["text", "copy", "writing"],
+        words: ["text", "content"],
+        site: ["website", "page", "pages"],
+        website: ["site", "page", "pages"],
+        google: ["search", "serp"],
+        rank: ["ranking", "position", "serp"],
+        crawl: ["index", "crawling", "robots"],
+        index: ["crawl", "indexing"],
+        compare: ["diff", "difference"],
+        broken: ["dead", "404", "error"],
+        link: ["links", "url", "urls"],
+        open: ["bulk", "multiple"],
+        count: ["counter", "length"]
+    };
+
+    const grid = document.getElementById("tool-grid");
+    const noResults = document.getElementById("no-results");
+    const noResultsTerm = document.getElementById("no-results-term");
+    const searchInput = document.getElementById("tool-search");
+    const searchClear = document.getElementById("tool-search-clear");
+    const searchForm = document.getElementById("tool-search-form");
+    const searchMeta = document.getElementById("search-meta");
+    const totalCountEl = document.getElementById("tool-total-count");
+    const chips = document.querySelectorAll(".quick-chip");
+    let activeCategory = "";
+
+    totalCountEl.textContent = TOOLS.length;
+
+    function renderCards(list) {
+        grid.innerHTML = "";
+        list.forEach(tool => {
+            const card = document.createElement("article");
+            card.className = "tool-card";
+            card.dataset.id = tool.id;
+            card.innerHTML = `
+                <div class="tool-thumb" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="11" fill="#d9ff5a" opacity="0.15"></circle>
+                    </svg>
+                    <i class="${tool.icon}" style="color:#d9ff5a; font-size:1.15rem;"></i>
+                </div>
+                <h3>${tool.title}</h3>
+                <p>${tool.description}</p>
+                <a href="#" class="btn btn-primary" aria-label="Open ${tool.title.replace(/&amp;/g, '&')}">Use tool <i class="fa-solid fa-arrow-right"></i></a>
+            `;
+            grid.appendChild(card);
+        });
+    }
+
+    function expandQuery(query) {
+        const words = query.toLowerCase().trim().split(/\s+/).filter(Boolean);
+        const expanded = new Set(words);
+        words.forEach(w => {
+            if (SYNONYMS[w]) SYNONYMS[w].forEach(s => expanded.add(s));
+        });
+        return Array.from(expanded);
+    }
+
+    function matchesTool(tool, queryWords) {
+        if (queryWords.length === 0) return true;
+        const haystack = (tool.title + " " + tool.description + " " + tool.tags.join(" ")).toLowerCase();
+        // direct: the raw phrase appears as a substring (case-insensitive)
+        const rawQuery = queryWords.join(" ");
+        if (haystack.includes(rawQuery)) return true;
+        // indirect/semantic: any expanded word (or synonym) appears
+        return queryWords.some(w => haystack.includes(w));
+    }
+
+    function applyFilters() {
+        const rawTerm = searchInput.value.trim();
+        const queryWords = expandQuery(rawTerm);
+        let filtered = TOOLS.filter(tool => matchesTool(tool, rawTerm ? queryWords : []));
+        if (activeCategory) {
+            filtered = filtered.filter(tool => tool.category === activeCategory);
+        }
+
+        renderCards(filtered);
+        searchClear.classList.toggle("show", rawTerm.length > 0);
+
+        if (filtered.length === 0) {
+            noResults.classList.add("show");
+            noResultsTerm.textContent = rawTerm || "your filter";
+        } else {
+            noResults.classList.remove("show");
+        }
+
+        if (rawTerm) {
+            searchMeta.innerHTML = `Showing <strong>${filtered.length}</strong> of <strong>${TOOLS.length}</strong> tools for "<strong>${rawTerm}</strong>"`;
+        } else {
+            searchMeta.innerHTML = `Showing all <strong>${filtered.length}</strong> tools`;
+        }
+    }
+
+    let debounceTimer;
+    searchInput.addEventListener("input", () => {
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(applyFilters, 150);
+    });
+    searchForm.addEventListener("submit", (e) => { e.preventDefault(); applyFilters(); });
+    searchClear.addEventListener("click", () => { searchInput.value = ""; applyFilters(); searchInput.focus(); });
+    document.getElementById("reset-search-link").addEventListener("click", (e) => {
+        e.preventDefault();
+        searchInput.value = "";
+        activeCategory = "";
+        chips.forEach(c => c.classList.toggle("active", c.dataset.filter === ""));
+        applyFilters();
+        searchInput.focus();
+    });
+
+    chips.forEach(chip => {
+        chip.addEventListener("click", () => {
+            chips.forEach(c => c.classList.remove("active"));
+            chip.classList.add("active");
+            activeCategory = chip.dataset.filter;
+            applyFilters();
+        });
+    });
+
+    applyFilters();
+
+    /* ---------------------------------------------------------
+       DRAG PLAYGROUND (pointer events cover mouse + touch)
+    --------------------------------------------------------- */
+    const playground = document.getElementById("playground");
+    if (playground) {
+        const bubbles = playground.querySelectorAll(".drag-bubble");
+        bubbles.forEach(bubble => {
+            let offsetX = 0, offsetY = 0, dragging = false;
+
+            const startDrag = (clientX, clientY) => {
+                const rect = bubble.getBoundingClientRect();
+                offsetX = clientX - rect.left;
+                offsetY = clientY - rect.top;
+                dragging = true;
+                bubble.classList.add("dragging", "grabbing");
+            };
+
+            const moveDrag = (clientX, clientY) => {
+                if (!dragging) return;
+                const areaRect = playground.getBoundingClientRect();
+                let x = clientX - areaRect.left - offsetX;
+                let y = clientY - areaRect.top - offsetY;
+                const maxX = areaRect.width - bubble.offsetWidth;
+                const maxY = areaRect.height - bubble.offsetHeight;
+                x = Math.max(0, Math.min(x, maxX));
+                y = Math.max(0, Math.min(y, maxY));
+                bubble.style.left = x + "px";
+                bubble.style.top = y + "px";
+            };
+
+            const endDrag = () => {
+                dragging = false;
+                bubble.classList.remove("dragging", "grabbing");
+            };
+
+            bubble.addEventListener("pointerdown", (e) => {
+                bubble.setPointerCapture(e.pointerId);
+                startDrag(e.clientX, e.clientY);
+            });
+            bubble.addEventListener("pointermove", (e) => moveDrag(e.clientX, e.clientY));
+            bubble.addEventListener("pointerup", endDrag);
+            bubble.addEventListener("pointercancel", endDrag);
+
+            // keyboard support: arrow keys nudge the bubble
+            bubble.addEventListener("keydown", (e) => {
+                const step = 12;
+                const areaRect = playground.getBoundingClientRect();
+                const rect = bubble.getBoundingClientRect();
+                let x = rect.left - areaRect.left;
+                let y = rect.top - areaRect.top;
+                const maxX = areaRect.width - bubble.offsetWidth;
+                const maxY = areaRect.height - bubble.offsetHeight;
+                if (e.key === "ArrowLeft") x -= step;
+                else if (e.key === "ArrowRight") x += step;
+                else if (e.key === "ArrowUp") y -= step;
+                else if (e.key === "ArrowDown") y += step;
+                else return;
+                e.preventDefault();
+                x = Math.max(0, Math.min(x, maxX));
+                y = Math.max(0, Math.min(y, maxY));
+                bubble.style.left = x + "px";
+                bubble.style.top = y + "px";
+            });
+        });
+    }
+})();
+</script>
+
+<script>
+    // FAQ accordion
+    document.querySelectorAll('#faq-list .faq-item').forEach((item) => {
+        const btn = item.querySelector('.faq-q');
+        const answer = item.querySelector('.faq-a');
+        btn.addEventListener('click', () => {
+            const isOpen = item.classList.contains('open');
+            document.querySelectorAll('#faq-list .faq-item.open').forEach((openItem) => {
+                if (openItem !== item) {
+                    openItem.classList.remove('open');
+                    openItem.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+                    openItem.querySelector('.faq-a').style.maxHeight = null;
+                }
+            });
+            if (isOpen) {
+                item.classList.remove('open');
+                btn.setAttribute('aria-expanded', 'false');
+                answer.style.maxHeight = null;
+            } else {
+                item.classList.add('open');
+                btn.setAttribute('aria-expanded', 'true');
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+            }
+        });
+    });
+</script>
+</body>
+</html>
