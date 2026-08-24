@@ -1,0 +1,772 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service | SEO Insights</title>
+    <meta name="description" content="Read the Terms of Service for SEO Insights. Understand the rules for using our free SEO tools, blogs, and services, including liability, IP, and account terms.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.theseoinsights.com/terms-of-service">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Terms of Service | SEO Insights">
+    <meta property="og:description" content="The rules and conditions for using SEO Insights' free SEO tools, blog content, and professional services.">
+    <meta property="og:url" content="https://www.theseoinsights.com/terms-of-service">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Terms of Service",
+      "description": "Terms of Service for SEO Insights, covering use of free SEO tools, blog content, and professional SEO services.",
+      "url": "https://www.theseoinsights.com/terms-of-service",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "SEO Insights",
+        "url": "https://www.theseoinsights.com"
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.theseoinsights.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Terms of Service", "item": "https://www.theseoinsights.com/terms-of-service" }
+        ]
+      }
+    }
+    </script>
+
+<style>
+    :root {
+    --primary: #2563eb;
+    --dark: #0f172a;
+    --light: #f8fafc;
+    --gray: #64748b;
+    --white: #ffffff;
+    --transition: all 0.3s ease;
+    --lighhtgray: #f5deb3;
+}
+
+/* Base Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', system-ui, sans-serif; line-height: 1.6; color: var(--dark); overflow-x: hidden; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+
+a { text-decoration: none; color: inherit; transition: var(--transition); }
+ul { list-style: none; }
+
+/* Navbar Component */
+.navbar {
+    position: sticky; top: 0; background: var(--white);
+    padding: 1rem 0 0.5rem 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    
+}
+.nav-flex { display: flex; justify-content: space-between; align-items: center; padding-bottom:8px !important; border-bottom: 8px solid var(--lighhtgray); border-radius: 10px; font-family: "Cardo", serif; font-weight: 700; font-style: normal;}
+
+.nav-links { display: flex; gap: 2rem; }
+.nav-link { position: relative; text-decoration: none;  font-weight: 700; font-size: 0.95rem; }
+
+
+.dumbbell {
+  display: block;
+  height: 3px;
+  background: black;
+  width: 100%;
+  position: relative;
+}
+
+.dumbbell::before,
+.dumbbell::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  width: 8px;
+  height: 8px;
+  background: black;
+  border-radius: 50%;
+}
+
+.dumbbell::before { left: 0; }
+.dumbbell::after { right: 0; }
+
+/* Mobile Menu Button */
+.menu-toggle { display: none; background: none; border: none; cursor: pointer; }
+.hamburger { width: 25px; height: 2px; background: var(--dark); display: block; position: relative; }
+.hamburger::before, .hamburger::after { content: ''; width: 100%; height: 2px; background: var(--dark); position: absolute; left: 0; }
+.hamburger::before { top: -8px; } .hamburger::after { bottom: -8px; }
+
+/* ===================
+   FOOTER
+=================== */
+
+.site-footer{
+    background:linear-gradient(
+    135deg,
+    #60a5fa,
+    #3b82f6);
+    color:white;
+}
+
+.footer-grid{
+    display:grid;
+    gap:2rem;
+    padding:3rem 0;
+}
+
+.footer-logo{
+    width:250px;
+    margin-bottom:1rem;
+}
+
+.footer-links h3,
+.footer-contact h3{
+    margin-bottom:1rem;
+    color:#d9ff5a;
+}
+
+.footer-links ul{
+    list-style:none;
+}
+
+.footer-links li{
+    margin-bottom:.75rem;
+}
+
+.footer-links a{
+    color:white;
+}
+
+.footer-contact a{
+    color:white;
+    display:block;
+    margin-bottom:1rem;
+}
+
+.socials{
+    display:flex;
+    gap:1rem;
+}
+
+.socials a{
+    color:white;
+    font-size:2rem;
+}
+
+.copyright{
+    text-align:center;
+    padding:1rem;
+    border-top:1px solid rgba(255,255,255,.2);
+}
+
+
+@media (max-width: 768px) {
+    .menu-toggle { display: block; }
+    .nav-links {
+        position: fixed; top: 70px; left: -100%; width: 100%; height: calc(100vh - 70px);
+        background: var(--white); flex-direction: column; align-items: center;
+        padding-top: 2rem; transition: 0.4s;
+    }
+    .nav-links.active { left: 0; }
+    
+    .nav-flex img{width: 200px;}
+
+}
+@media (max-width: 390px) {
+    .nav-flex{gap: 20px}
+    .nav-flex img{width: 130px;}
+    .navbar{padding-top: 0.5rem;}
+      
+}
+@media (min-width: 768px) {
+
+  
+    .footer-grid{
+        grid-template-columns:
+        1.2fr
+        1fr
+        1fr;
+    }
+
+
+
+}
+
+/* ===================================================
+   TERMS OF SERVICE PAGE STYLES
+   (scoped under .tos-page so nav/footer are untouched)
+=================================================== */
+
+.tos-page {
+    background: var(--light);
+}
+
+.tos-page .container { max-width: 960px; }
+
+/* Hero */
+.tos-hero {
+    background: var(--dark);
+    color: var(--white);
+    padding: 3rem 0 2.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.tos-hero::after {
+    content: "";
+    position: absolute;
+    top: -60px;
+    right: -60px;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(37,99,235,0.45), transparent 70%);
+}
+
+.tos-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--lighhtgray);
+    margin-bottom: 0.75rem;
+}
+
+.tos-hero h1 {
+    font-family: "Cardo", serif;
+    font-weight: 700;
+    font-size: clamp(1.9rem, 5vw, 2.75rem);
+    line-height: 1.15;
+    max-width: 20ch;
+    margin-bottom: 0.75rem;
+}
+
+.tos-hero p {
+    color: #cbd5e1;
+    font-size: 1rem;
+    max-width: 55ch;
+}
+
+.tos-updated {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1.25rem;
+    font-size: 0.85rem;
+    color: #e2e8f0;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    padding: 0.4rem 0.9rem;
+    border-radius: 999px;
+}
+
+/* Layout: TOC + content */
+.tos-body {
+    padding: 2.5rem 0 4rem;
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: 1fr;
+}
+
+/* Table of contents */
+.tos-toc {
+    background: var(--white);
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 1.5rem;
+    height: max-content;
+}
+
+.tos-toc h2 {
+    font-family: "Cardo", serif;
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+    color: var(--dark);
+}
+
+.tos-toc ol {
+    list-style: none;
+    counter-reset: toc-counter;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.tos-toc li {
+    counter-increment: toc-counter;
+}
+
+.tos-toc a {
+    display: flex;
+    gap: 0.6rem;
+    font-size: 0.9rem;
+    color: var(--gray);
+    font-weight: 500;
+    border-radius: 8px;
+    padding: 0.35rem 0.5rem;
+}
+
+.tos-toc a::before {
+    content: counter(toc-counter, decimal-leading-zero);
+    font-family: "Cardo", serif;
+    font-weight: 700;
+    color: var(--primary);
+    flex-shrink: 0;
+}
+
+.tos-toc a:hover,
+.tos-toc a:focus-visible {
+    background: var(--light);
+    color: var(--primary);
+}
+
+/* Article content */
+.tos-content {
+    background: var(--white);
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: clamp(1.5rem, 4vw, 2.75rem);
+}
+
+.tos-section {
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #e2e8f0;
+    scroll-margin-top: 100px;
+}
+
+.tos-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.tos-section h2 {
+    font-family: "Cardo", serif;
+    font-size: 1.4rem;
+    color: var(--dark);
+    margin-bottom: 0.9rem;
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+}
+
+.tos-section h2 .num {
+    color: var(--primary);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.tos-section h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--dark);
+    margin: 1.25rem 0 0.5rem;
+}
+
+.tos-section p,
+.tos-section li {
+    color: var(--gray);
+    font-size: 0.98rem;
+    margin-bottom: 0.85rem;
+}
+
+.tos-section ul,
+.tos-section ol.tos-list {
+    padding-left: 1.25rem;
+    margin-bottom: 0.85rem;
+}
+
+.tos-section ul li { list-style: disc; }
+.tos-section ol.tos-list li { list-style: decimal; }
+
+.tos-section a.inline-link {
+    color: var(--primary);
+    font-weight: 600;
+    border-bottom: 1px solid rgba(37,99,235,0.35);
+}
+
+.tos-section a.inline-link:hover { border-bottom-color: var(--primary); }
+
+.tos-callout {
+    background: var(--light);
+    border-left: 4px solid var(--primary);
+    padding: 1rem 1.25rem;
+    border-radius: 8px;
+    font-size: 0.92rem;
+    color: var(--dark);
+    margin-bottom: 1rem;
+}
+
+.tos-callout strong { color: var(--primary); }
+
+/* Contact CTA */
+.tos-cta {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    background: var(--dark);
+    border-radius: 12px;
+    color: var(--white);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.tos-cta p { color: #cbd5e1; margin-bottom: 0; font-size: 0.95rem; }
+.tos-cta h3 { font-family: "Cardo", serif; margin-bottom: 0.25rem; font-size: 1.15rem; }
+
+.tos-cta-btn {
+    background: var(--primary);
+    color: var(--white);
+    font-weight: 600;
+    padding: 0.7rem 1.4rem;
+    border-radius: 8px;
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tos-cta-btn:hover { background: #1d4ed8; }
+
+/* Back to top */
+.tos-back-top {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--primary);
+    font-weight: 600;
+    margin-top: 1.5rem;
+}
+
+/* Focus visibility for accessibility */
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}
+
+@media (min-width: 900px) {
+    .tos-body {
+        grid-template-columns: 280px 1fr;
+        align-items: start;
+    }
+    .tos-toc {
+        position: sticky;
+        top: 110px;
+    }
+}
+</style>
+</head>
+<body>
+    <header class="navbar" id="main-nav">
+        <div class="container nav-flex">
+           <img src="C:\Users\USER\Documents\SEO-Insights-main\SEO-Insights-main\assets\images\navlogo.png" width="230" alt="SEO_insights_Logo">
+            
+            <button class="menu-toggle" aria-label="Toggle Menu">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav class="nav-links">
+                <a href="#hero" class="nav-link active">Home  <span class="dumbbell"></span></a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#tools" class="nav-link">Tools</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+        </div >
+    </header>
+
+    <!-- ===================================================
+         TERMS OF SERVICE — MAIN CONTENT
+    =================================================== -->
+    <main class="tos-page">
+
+        <section class="tos-hero">
+            <div class="container">
+                <span class="tos-eyebrow"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i> Legal</span>
+                <h1>Terms of Service</h1>
+                <p>These terms explain what you can expect from SEO Insights, and what we expect from you, when you use our free tools, blog content, or paid SEO services.</p>
+                <span class="tos-updated"><i class="fa-regular fa-clock" aria-hidden="true"></i> Last updated: July 16, 2026</span>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="tos-body">
+
+                <!-- Table of Contents -->
+                <nav class="tos-toc" aria-label="Terms of Service sections">
+                    <h2>On this page</h2>
+                    <ol>
+                        <li><a href="#acceptance">Acceptance of terms</a></li>
+                        <li><a href="#eligibility">Who can use SEO Insights</a></li>
+                        <li><a href="#tools-services">Our tools and services</a></li>
+                        <li><a href="#accounts">Accounts and access</a></li>
+                        <li><a href="#acceptable-use">Acceptable use</a></li>
+                        <li><a href="#ip">Intellectual property</a></li>
+                        <li><a href="#third-party">Third-party links and content</a></li>
+                        <li><a href="#disclaimer">Disclaimer of warranties</a></li>
+                        <li><a href="#liability">Limitation of liability</a></li>
+                        <li><a href="#indemnification">Indemnification</a></li>
+                        <li><a href="#termination">Termination</a></li>
+                        <li><a href="#changes">Changes to these terms</a></li>
+                        <li><a href="#governing-law">Governing law</a></li>
+                        <li><a href="#contact">Contact us</a></li>
+                    </ol>
+                </nav>
+
+                <!-- Article -->
+                <article class="tos-content">
+
+                    <div class="tos-section" id="acceptance">
+                        <h2><span class="num">01</span> Acceptance of terms</h2>
+                        <p>By accessing or using theseoinsights.com, including our free SEO tools, blog articles, and any paid services (together, the "Services"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree with any part of these Terms, please do not use the Services.</p>
+                        <p>We may update these Terms from time to time. Continued use of the Services after changes are posted means you accept the revised Terms. Please see <a href="#changes" class="inline-link">Changes to these terms</a> for details.</p>
+                    </div>
+
+                    <div class="tos-section" id="eligibility">
+                        <h2><span class="num">02</span> Who can use SEO Insights</h2>
+                        <p>You must be at least 16 years old, or the age of digital consent in your jurisdiction, to use the Services. By using the Services, you confirm that you meet this requirement and that any information you provide to us is accurate and current.</p>
+                        <p>If you are using the Services on behalf of a business or organization, you confirm you have the authority to bind that entity to these Terms.</p>
+                    </div>
+
+                    <div class="tos-section" id="tools-services">
+                        <h2><span class="num">03</span> Our tools and services</h2>
+                        <p>SEO Insights provides free browser-based SEO tools (such as our Bulk URL Opener, Diff Checker, and Online Text Editor), educational blog content, and professional SEO services delivered on request.</p>
+                        <h3>Free tools</h3>
+                        <p>Our free tools are provided "as is" to help with everyday SEO and content workflows. We do our best to keep them accurate and available, but we do not guarantee uninterrupted access, specific output accuracy, or fitness for any particular purpose.</p>
+                        <div class="tos-callout">
+                            <strong>Good to know:</strong> Free tools are intended for legitimate SEO, content, and productivity workflows. We may add usage limits, rate limiting, or temporarily suspend a tool to protect service stability for all users.
+                        </div>
+                        <h3>Paid services</h3>
+                        <p>Where you purchase a service package (for example, technical SEO audits or content optimization), the specific scope, deliverables, timeline, and fees will be agreed separately in writing (such as a proposal, invoice, or service agreement), which forms part of these Terms for that engagement.</p>
+                    </div>
+
+                    <div class="tos-section" id="accounts">
+                        <h2><span class="num">04</span> Accounts and access</h2>
+                        <p>Some features may require you to create an account or provide contact details. You are responsible for maintaining the confidentiality of any login credentials and for all activity that occurs under your account.</p>
+                        <p>Notify us immediately at <a href="mailto:support@theseoinsights.com" class="inline-link">support@theseoinsights.com</a> if you suspect unauthorized use of your account.</p>
+                    </div>
+
+                    <div class="tos-section" id="acceptable-use">
+                        <h2><span class="num">05</span> Acceptable use</h2>
+                        <p>When using the Services, you agree not to:</p>
+                        <ul>
+                            <li>Use our tools to scrape, spam, or attack third-party websites without authorization.</li>
+                            <li>Attempt to reverse-engineer, decompile, or interfere with the underlying code of our tools.</li>
+                            <li>Upload or process content that is unlawful, infringing, malicious, or that you do not have the rights to use.</li>
+                            <li>Use automated systems (bots, scrapers) to excessively access the Services in a way that degrades performance for other users.</li>
+                            <li>Misrepresent your identity or affiliation when contacting us or submitting content.</li>
+                        </ul>
+                        <p>We reserve the right to restrict or terminate access for anyone who violates this section.</p>
+                    </div>
+
+                    <div class="tos-section" id="ip">
+                        <h2><span class="num">06</span> Intellectual property</h2>
+                        <p>All content on theseoinsights.com, including text, graphics, logos, tool interfaces, and underlying code, is owned by SEO Insights or our licensors and is protected by copyright and other intellectual property laws.</p>
+                        <p>You may use our blog content for personal reference and may quote brief excerpts with clear attribution and a link back to the source page. You may not republish, resell, or distribute substantial portions of our content without prior written permission.</p>
+                        <p>Any output generated using our free tools is yours to use for your own projects; however, the tools themselves remain our property.</p>
+                    </div>
+
+                    <div class="tos-section" id="third-party">
+                        <h2><span class="num">07</span> Third-party links and content</h2>
+                        <p>Our Services may contain links to third-party websites or reference third-party data (for example, search engine documentation). We do not control and are not responsible for the content, accuracy, or practices of third-party sites. Visiting linked sites is at your own discretion and risk.</p>
+                    </div>
+
+                    <div class="tos-section" id="disclaimer">
+                        <h2><span class="num">08</span> Disclaimer of warranties</h2>
+                        <p>The Services are provided on an "as is" and "as available" basis without warranties of any kind, whether express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, and non-infringement.</p>
+                        <p>SEO strategies and recommendations reflect general best practices at the time of publication. Search engine algorithms change frequently, and we do not guarantee specific rankings, traffic outcomes, or business results from using our tools, blog guidance, or services.</p>
+                    </div>
+
+                    <div class="tos-section" id="liability">
+                        <h2><span class="num">09</span> Limitation of liability</h2>
+                        <p>To the fullest extent permitted by law, SEO Insights and its team will not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits, data, or business opportunities, arising from your use of, or inability to use, the Services.</p>
+                        <p>Where liability cannot be fully excluded under applicable law, our total liability for any claim relating to the Services is limited to the amount you paid us, if any, for the specific service giving rise to the claim in the twelve months preceding the claim.</p>
+                    </div>
+
+                    <div class="tos-section" id="indemnification">
+                        <h2><span class="num">10</span> Indemnification</h2>
+                        <p>You agree to indemnify and hold harmless SEO Insights, its team members, and affiliates from any claims, damages, liabilities, and expenses (including reasonable legal fees) arising from your use of the Services, your violation of these Terms, or your infringement of any third-party rights.</p>
+                    </div>
+
+                    <div class="tos-section" id="termination">
+                        <h2><span class="num">11</span> Termination</h2>
+                        <p>We may suspend or terminate your access to the Services at any time, with or without notice, if we reasonably believe you have violated these Terms or engaged in conduct that harms the Services or other users.</p>
+                        <p>You may stop using the Services at any time. Sections of these Terms that by their nature should survive termination (including Intellectual Property, Disclaimer of Warranties, and Limitation of Liability) will continue to apply.</p>
+                    </div>
+
+                    <div class="tos-section" id="changes">
+                        <h2><span class="num">12</span> Changes to these terms</h2>
+                        <p>We may revise these Terms periodically to reflect changes in our Services, legal requirements, or business practices. When we make material changes, we will update the "Last updated" date at the top of this page. We encourage you to review this page occasionally.</p>
+                    </div>
+
+                    <div class="tos-section" id="governing-law">
+                        <h2><span class="num">13</span> Governing law</h2>
+                        <p>These Terms are governed by the laws applicable in our place of business, without regard to conflict-of-law principles. Any disputes arising from these Terms or your use of the Services will be handled in the courts of that jurisdiction, unless otherwise required by applicable local law.</p>
+                    </div>
+
+                    <div class="tos-section" id="contact">
+                        <h2><span class="num">14</span> Contact us</h2>
+                        <p>If you have questions about these Terms or need clarification about your use of the Services, reach out to our team and we'll get back to you as soon as we can.</p>
+
+                        <div class="tos-cta">
+                            <div>
+                                <h3>Still have questions?</h3>
+                                <p>Our support team is happy to help clarify any part of these terms.</p>
+                            </div>
+                            <a href="mailto:support@theseoinsights.com" class="tos-cta-btn">
+                                <i class="fa-regular fa-envelope" aria-hidden="true"></i> Email support
+                            </a>
+                        </div>
+
+                        <a href="#main-nav" class="tos-back-top">
+                            <i class="fa-solid fa-arrow-up" aria-hidden="true"></i> Back to top
+                        </a>
+                    </div>
+
+                </article>
+            </div>
+        </div>
+    </main>
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-about">
+
+                <img
+                    src="C:\Users\USER\Documents\SEO-Insights-main\SEO-Insights-main\assets\images\navlogo.png"
+                    alt="SEO Insights"
+                    class="footer-logo">
+
+                <p>
+                    Data-driven SEO strategies and digital marketing
+                    solutions designed for modern brands and solo creators.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+                <li><a href="#">Bulk URL Opener <i class="fa-solid fa-square-arrow-up-right"></i></a></li>
+                <li><a href="#">Diff Checker <i class="fa-solid fa-square-arrow-up-right"></i></a></li>
+                <li><a href="#">Online Text Editor <i class="fa-solid fa-square-arrow-up-right"></i></a></li>
+                <li><a href="#">Our Services <i class="fa-solid fa-square-arrow-up-right"></i></a></li>
+                <li><a href="#">Our Tools <i class="fa-solid fa-square-arrow-up-right"></i></a></li>
+                </ul>
+
+            </div>
+
+            <div class="footer-contact">
+
+                <h3>Contact</h3>
+
+                <a href="mailto:support@theseoinsights.com">
+                    support@theseoinsights.com
+                </a>
+
+                <div class="socials">
+
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            SEO Insights © 2026. All rights reserved.
+        </div>
+
+    </div>
+
+</footer>
+<script>
+    // Mobile Menu Toggle
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
+// Scroll Highlighting Logic (Intersection Observer)
+// This is better for performance than 'window.onscroll'
+const sections = document.querySelectorAll('section');
+const navItems = document.querySelectorAll('.nav-link');
+
+const observerOptions = {
+    threshold: 0.5
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            navItems.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === entry.target.id) {
+                    link.classList.add('active');
+                }
+            });
+        }
+    });
+}, observerOptions);
+
+sections.forEach(section => observer.observe(section));
+
+// Smooth Scroll for Navigation
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        navLinks.classList.remove('active'); // Close mobile menu on click
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+// Highlight active Table of Contents item on scroll (Terms of Service page)
+const tosSections = document.querySelectorAll('.tos-section[id]');
+const tocLinks = document.querySelectorAll('.tos-toc a');
+
+if (tosSections.length && tocLinks.length) {
+    const tocObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            const link = document.querySelector(`.tos-toc a[href="#${entry.target.id}"]`);
+            if (!link) return;
+            if (entry.isIntersecting) {
+                tocLinks.forEach(l => l.style.color = '');
+                link.style.color = 'var(--primary)';
+            }
+        });
+    }, { rootMargin: '-100px 0px -70% 0px' });
+
+    tosSections.forEach(section => tocObserver.observe(section));
+}
+</script>
+</body>
+</html>
